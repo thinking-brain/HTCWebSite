@@ -15,8 +15,7 @@ class DefaultController extends Controller
     public function index()
     {
         // build the form ...
-        $contact = new Contact();
-        //$form = $this->createForm(ContactType::class, $contact);  
+        $contact = new Contact();          
         $form = $this->createForm(new ContactType(), $contact);
         // end build the form
         return $this->render('default/index.html.twig',array( 'form' => $form->createView(),));
