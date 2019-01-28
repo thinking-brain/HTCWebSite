@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="{{ asset('css/main.css') }}">
     <!-- Responsive Stylesheet -->
     <link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
+    <link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'> 
     {% block stylesheets %}{% endblock %}
     <!-- Js -->
     <script src="{{ asset('js/vendor/modernizr-2.6.2.min.js') }}"></script>
@@ -30,6 +31,7 @@
     <script src="{{ asset('js/plugins.js') }}"></script>
     <script src="{{ asset('js/wow.min.js') }}"></script>
     <script src="{{ asset('js/main.js') }}"></script>
+
 </head>
 <body>
 {% block carousel %}
@@ -42,7 +44,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="block">
-                        <nav class="navbar navbar-default">
+                        <nav class="navbar navbar-default ">
                             <div class="container-fluid">
                                 <!-- Brand and toggle get grouped for better mobile display -->
                                 <div class="navbar-header">
@@ -60,8 +62,8 @@
                                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                                     <ul class="nav navbar-nav navbar-right" id="top-nav">
                                         <li><a href="{{path('index')}}">Home</a></li>
-                                        <li><a href="{{path('index')}}#about-us">About us</a></li>
                                         <li><a href="{{path('index')}}#blog">Services</a></li>
+                                        <li><a href="{{path('index')}}#about-us">About us</a></li>
                                         <li><a href="{{path('index')}}#price">FAQ</a></li>
                                         <!--<li><a href="#subscribe">news</a></li>-->
                                         <li><a href="{{path('index')}}#contact-us">contacts us</a></li>
@@ -75,20 +77,22 @@
         </div><!-- .container close -->
     </nav><!-- header close -->    
 
+   {% block intivation %}
     <!--
     Slider start
     ============================== -->
-    <section id="slider">
+    <section id="slider" class="sdp">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="block wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">                        
-                        {% block intivation %}{% endblock %}                        
+                                       
                     </div>
                 </div><!-- .col-md-12 close -->
             </div><!-- .row close -->
         </div><!-- .container close -->
     </section><!-- slider close -->
+      {% endblock %}      
     {% block body %}{% endblock %}
     
     <!--
@@ -99,20 +103,18 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="block wow fadeInLeft" data-wow-delay="200ms">
-                        <h3>CONTACT <span>INFO</span></h3>
+                        <h3 style="font-family: Righteous">CONTACT <span style="">INFO</span></h3>
                         <div class="info">
                             <ul>
                                 <li>
-                                    <h4><i class="fa fa-phone"></i>Telefone</h4>
-                                    <p>(+53) 52440711 - (+53) 52948403</p>
+                                    <h4 style=""><i class="fa fa-phone"></i>Telefone</h4>
+                                    <p>(+53) 52440711 </p>
+                                    <p>(+53) 52948403</p>
 
                                 </li>
-                                <!--<li>
-                                    <h4><i class="fa fa-map-marker"></i>Address</h4>
-                                    <p>2046 Blue Spruce Lane Laurel Canada</p>
-                                </li>-->
-                                <li>
-                                    <h4><i class="fa fa-envelope"></i>E mail</h4>
+                               <br/>
+                                <li >
+                                    <h4 style=""><i class="fa fa-envelope"></i>E mail</h4>
                                     <p>havanatruecolors@gmail.com</p>
 
                                 </li>
@@ -123,15 +125,15 @@
                 <!-- .col-md-4 close -->
                 <div class="col-md-4">
                     <div class="block wow fadeInLeft" data-wow-delay="700ms">
-                        <h3>LATEST <span>TRIPADVISOR POSTS</span></h3>
+                        <h3>LATEST <span style="">TRIPADVISOR POSTS</span></h3>
                         <div class="blog">
                             <ul>
                                 <li>
-                                    <h4><a href="#">Nov 9-2014</a></h4>
+                                    <h4><a style="" href="#">Nov 9-2014</a></h4>
                                     <p>Lorem ipsum dolor sit amet, consectetur adip iscing elit. Curabitur ut blandit sapien</p>
                                 </li>
                                 <li>
-                                    <h4><a href="#">Sep 8-2014</a></h4>
+                                    <h4><a style="" href="#">Sep 8-2014</a></h4>
                                     <p>Lorem ipsum dolor sit amet, consectetur adip iscing elit. Curabitur ut blandit sapien</p>
                                 </li>
                             </ul>
@@ -159,7 +161,7 @@
                             </ul>
                         </div>-->
                         <div class="social-media-link">
-                            <h3>Follow <span>US</span></h3>
+                            <h3>Follow <span style="">US</span></h3>
                             <ul>
                                 <li>
                                     <a href="http://www.twiter.com/habanatruecolors">
@@ -197,7 +199,7 @@
             <div class="row">
                 <div class="col-md-12 col-sm-12">
                     <div class="block">
-                        <p>Copyright &copy; 2019 - All Rights Reserved.Design and Developed By <a href="http://www.themefisher.com">ADD</a></p>
+                        <p>Copyright &copy; 2019 - All Rights Reserved.Design and Developed By <a style=""href="http://www.themefisher.com">ADD</a></p>
                     </div>
                 </div>
             </div>
