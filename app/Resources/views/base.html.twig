@@ -73,7 +73,8 @@
                 </div><!-- .col-md-12 close -->
             </div><!-- .row close -->
         </div><!-- .container close -->
-    </nav><!-- header close -->
+    </nav><!-- header close -->    
+
     <!--
     Slider start
     ============================== -->
@@ -81,21 +82,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="block wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <div class="title">
-                            <h3> <span>INVITATION</span></h3>
-                        </div>
-                        <p class="wow fadeInUp" style="text-align:justify;" data-wow-duration="300ms" data-wow-delay="600ms">
-                            We are inviting you to a journey to our roots that will explain how everything is connected, always by the hand of a local and its genuine perspective showing you our TRUE COLORS. With wide open eyes you will witness a changing country and its people willing to be in control of this evolution and in doing so, retain its unique personality and appeal.
-                            The service we set out to provide is cheerful yet knowledgeable & professional; relaxed yet socially & environmentally committed…that´s our promise to our customers because we go for the extra mile and know what a caring and meaningful relationship is all about.
-                        </p>
-
+                    <div class="block wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">                        
+                        {% block intivation %}{% endblock %}                        
                     </div>
                 </div><!-- .col-md-12 close -->
             </div><!-- .row close -->
         </div><!-- .container close -->
     </section><!-- slider close -->
-
     {% block body %}{% endblock %}
     
     <!--
@@ -215,7 +208,7 @@
 <script>
     $('.carousel').carousel({
         interval: 5000
-    })
-    {% block javascripts %}{% endblock %}
+    });    
 </script>
+{% block scripts %}{% endblock %}
 
