@@ -13,27 +13,6 @@ use AppBundle\Entity\Booking;
 class MailerController extends Controller
 {
     /**
-     * @Route("/mailer/{reserva}", name="sendmail", )
-     */
-    public function sendmail($reserva, \Swift_Mailer $mailer)
-    {
-        $message = (new \Swift_Message('Hello Email'))
-            ->setFrom('elvis@cteag.une.cu')   
-            ->setReplyTo('elvis.crego@gmail.com')         
-            ->setTo('elvis@cteag.une.cu')
-            ->setBody(
-                $this->renderView(                    
-                    'emails/reservacion.html.twig',
-                    array('name' => $name)
-                ),
-                'text/html'
-            );
-
-        $mailer->send($message);        
-        return $this->redirectToRoute('index');
-    }
-
-    /**
      * @Route("/contact/", name="contact", )
      */
     public function contact(Request $request)
@@ -45,14 +24,7 @@ class MailerController extends Controller
         $form->handleRequest($request);
         
         if ($form->isSubmitted() && $form->isValid())
-         {
-            /*
-            $entityManager = $this->getDoctrine()->getManager();
-            $entityManager->persist($contact);
-            $entityManager->flush();
-            return $this->redirectToRoute('admin_post_show', [
-            'id' => $contact->getId()
-            ]);*/
+         {            
             $message = (new \Swift_Message('Havana True Colors'))
             ->setFrom('tours@havanatruecolors.com')   
             ->setReplyTo($contact->getEmail())         
@@ -65,6 +37,10 @@ class MailerController extends Controller
                 'text/html'
             );
             $this->get('mailer')->send($message);
+            $em = $this->getDoctrine()->getManager();
+            $em->persist($contact);            
+            $em->flush();
+            return $this->redirectToRoute('notice');
         }        
         // render the template
         return $this->redirectToRoute('index');
@@ -80,16 +56,9 @@ class MailerController extends Controller
         $form = $this->createForm(new BookingType(), $booking);      
         // end build the form
         $form->handleRequest($request);
-        
+        //$booking->setDate(\DateTime::createFromFormat('dd/MM/yyyy', $booking->getDate()));
         if ($form->isSubmitted() && $form->isValid())
-         {
-            /*
-            $entityManager = $this->getDoctrine()->getManager();
-            $entityManager->persist($contact);
-            $entityManager->flush();
-            return $this->redirectToRoute('admin_post_show', [
-            'id' => $contact->getId()
-            ]);*/
+         {            
             $message = (new \Swift_Message('Havana True Colors'))
             ->setFrom('tours@havanatruecolors.com')   
             ->setReplyTo($booking->getEmail())         
@@ -101,9 +70,21 @@ class MailerController extends Controller
                 ),
                 'text/html'
             );
-            $this->get('mailer')->send($message);
+            $this->get('mailer')->send($message);            
+            $em = $this->getDoctrine()->getManager();
+            $em->persist($booking);            
+            $em->flush();
+            return $this->redirectToRoute('notice');
         }        
         // render the template
         return $this->redirectToRoute('index');
+    }
+
+    /**
+    * @Route("/notice/", name="notice", )
+    */
+    public function bookNotify()
+    {
+        return $this->render('default/notice.html.twig');
     }
 }
