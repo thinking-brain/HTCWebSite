@@ -1,465 +1,555 @@
 {% extends 'base.html.twig' %}
 {% block carousel %}
- <!--
-    header-img start
-    ============================== -->
-    <section id="hero-area">
-        <!--<img class="img-responsive" src="images/header.jpg" alt="">-->
-        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="4"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="5"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="6"></li>
-            </ol>
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                    <img class="img-responsive" src="{{ asset('images/header/1.jpg') }}" alt="...">
-                  <div class="carousel-caption">
-                        <div class="block wow fadeInLeft" data-wow-duration="900ms" data-wow-delay="600ms">
-                            <div class="title">
-                                <h1 class="" style="font-size: 60px; color: #0265fc!important;-webkit-text-stroke-width: 1px;-webkit-text-stroke-color: white;font-family: Righteous"> Havana <span style="color: #fc0207!important;">True</span> <span style="color: #fbd301!important;">Colors</span></h1>
-                            </div>
+<!--
+   header-img start
+   ============================== -->
+<section id="hero-area">
+    <!--<img class="img-responsive" src="images/header.jpg" alt="">-->
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+   
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img class="img-responsive" src="{{ asset('images/header/1.jpg') }}" alt="...">
+                <div class="carousel-caption" style="margin-bottom: 300px!important;padding-left: 400px!important;">
+                    <div class="block wow fadeInLeft" data-wow-duration="900ms" data-wow-delay="600ms">
+                        <div class="title">
+                            <h1 class="page-title" style="font-size: 50px;"> Havana <span style="color: #fc0207!important;">True Colors</span></h1>
                         </div>
-                        <div class="block wow fadeInRight" data-wow-duration="900ms" data-wow-delay="800ms">
+                    </div>
+                    <div class="block wow fadeInRight" data-wow-duration="900ms" data-wow-delay="800ms">
+                       <h1 class="transparence-captions" style="font-size: 30px;" data-wow-duration="300ms" data-wow-delay="600ms">
+                            “Let us show you, because locals know better.”
+                        </h1>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img class="img-responsive" src="{{ asset('images/header/2.jpg') }}" alt="...">
+                <div class="carousel-caption" style="padding-right: 400px!important;">
+                    <div class="block wow fadeInLeft" data-wow-duration="900ms" data-wow-delay="600ms">
+                        <div class="title">
+                             <h1 class="page-title" style="font-size: 50px;"> Havana <span style="color: #fc0207!important;">True Colors</span></h1>
+                        </div>
 
-                            <h1 style="text-align: center; font-size: 50px" data-wow-duration="300ms" data-wow-delay="600ms">
-                                “Let us show you, because locals know better.”
-                            </h1>
-                        </div>
+                    </div>
+                    <div class="block wow fadeInRight" data-wow-duration="900ms" data-wow-delay="800ms">
+                      <h1 class="transparence-captions" style="font-size: 30px;" data-wow-duration="300ms" data-wow-delay="600ms">
+                            “Step into our story for a true experience.”
+                        </h1>
                     </div>
                 </div>
-                <div class="item">
-                    <img class="img-responsive" src="{{ asset('images/header/2.jpg') }}" alt="...">
-                      <div class="carousel-caption">
-                        <div class="block wow fadeInLeft" data-wow-duration="900ms" data-wow-delay="600ms">
-                            <div class="title">
-                                 <h1 class="" style="font-size: 60px; color: #0265fc!important;-webkit-text-stroke-width: 1px;-webkit-text-stroke-color: white;font-family: Righteous"> Havana <span style="color: #fc0207!important;">True</span> <span style="color: #fbd301!important;">Colors</span></h1>
-                            </div>
-
-                        </div>
-                        <div class="block wow fadeInRight" data-wow-duration="900ms" data-wow-delay="800ms">
-                            <h1 style="text-align: center; font-size: 50px " data-wow-duration="300ms" data-wow-delay="600ms">
-                                “Step into our story for a true experience.”
-                            </h1>
+            </div>
+            <div class="item">
+                <img class="img-responsive" src="{{ asset('images/header/3.jpg') }}" alt="...">
+                <div class="carousel-caption">
+                    <div class="block wow fadeInLeft" data-wow-duration="900ms" data-wow-delay="600ms">
+                        <div class="title">
+                            <h1 class="page-title" style="font-size: 60px;"> Havana <span style="color: #fc0207!important;">True Colors</span></h1>
                         </div>
                     </div>
-                </div>
-                <div class="item">
-                    <img class="img-responsive" src="{{ asset('images/header/3.jpg') }}" alt="...">
-                    <div class="carousel-caption">
-                        <div class="block wow fadeInLeft" data-wow-duration="900ms" data-wow-delay="600ms">
-                            <div class="title">
-                                <h1 class="" style="font-size: 60px; color: #0265fc!important;-webkit-text-stroke-width: 1px;-webkit-text-stroke-color: white;font-family: Righteous"> Havana <span style="color: #fc0207!important;">True</span> <span style="color: #fbd301!important;">Colors</span></h1>
-                            </div>
-                        </div>
-                        <div class="block wow fadeInRight" data-wow-duration="900ms" data-wow-delay="800ms">
-                            <h1 style="text-align: center; font-size: 50px" data-wow-duration="300ms" data-wow-delay="600ms">
-                                “Always supporting our people, keeping local.”
-                            </h1>
-                        </div>
+                    <div class="block wow fadeInRight" data-wow-duration="900ms" data-wow-delay="800ms">
+                          <h1 class="transparence-captions" style="font-size: 40px;" data-wow-duration="300ms" data-wow-delay="600ms">
+                            “Always supporting our people, keeping local.”
+                        </h1>
                     </div>
                 </div>
-                <div class="item">
-                    <img class="img-responsive" src="{{ asset('images/header/4.jpg') }}" alt="...">
-                     <div class="carousel-caption">
-                        <div class="block wow fadeInLeft" data-wow-duration="900ms" data-wow-delay="600ms">
-                            <div class="title">
-                                <h1 class="" style="font-size: 60px; color: #0265fc!important;-webkit-text-stroke-width: 1px;-webkit-text-stroke-color: white;font-family: Righteous"> Havana <span style="color: #fc0207!important;">True</span> <span style="color: #fbd301!important;">Colors</span></h1>
-                            </div>
-                        </div>
-                        <div class="block wow fadeInRight" data-wow-duration="900ms" data-wow-delay="800ms">
-                            <h1 style="text-align: center; font-size: 40px" data-wow-duration="300ms" data-wow-delay="600ms">
-                               “A Captivating culture to seduce you.”
-                            </h1>
+            </div>
+            <div class="item">
+                <img class="img-responsive" src="{{ asset('images/header/4.jpg') }}" alt="...">
+                <div class="carousel-caption" style="margin-bottom: 300px!important;padding-right: 400px!important;">
+                    <div class="block wow fadeInLeft" data-wow-duration="900ms" data-wow-delay="600ms">
+                        <div class="title">
+                             <h1 class="page-title" style="font-size: 50px;"> Havana <span style="color: #fc0207!important;">True Colors</span></h1>
                         </div>
                     </div>
-                </div>
-                 <div class="item">
-                    <img class="img-responsive" src="{{ asset('images/header/6.jpg') }}" alt="...">
-                   <div class="carousel-caption">
-                        <div class="block wow fadeInLeft" data-wow-duration="900ms" data-wow-delay="600ms">
-                            <div class="title">
-                                <h1 class="" style="font-size: 60px; color: #0265fc!important;-webkit-text-stroke-width: 1px;-webkit-text-stroke-color: white;font-family: Righteous"> Havana <span style="color: #fc0207!important;">True</span> <span style="color: #fbd301!important;">Colors</span></h1>
-                            </div>
-                        </div>
-                        <div class="block wow fadeInRight" data-wow-duration="900ms" data-wow-delay="800ms">
-                            <h1 style="text-align: center; font-size: 40px" data-wow-duration="300ms" data-wow-delay="600ms">
-                                “Where True Love Strerts.”
-                            </h1>
-                        </div>
+                    <div class="block wow fadeInRight" data-wow-duration="900ms" data-wow-delay="800ms">
+                         <h1 class="transparence-captions" style="font-size: 30px;" data-wow-duration="300ms" data-wow-delay="600ms">
+                            “A Captivating culture to seduce you.”
+                        </h1>
                     </div>
                 </div>
-                <div class="item">
-                    <img class="img-responsive" src="{{ asset('images/header/5.jpg') }}" alt="...">
-                   <div class="carousel-caption">
-                        <div class="block wow fadeInLeft" data-wow-duration="900ms" data-wow-delay="600ms">
-                            <div class="title">
-                                <h1 class="" style="font-size: 60px; color: #0265fc!important;-webkit-text-stroke-width: 1px;-webkit-text-stroke-color: white;font-family: Righteous"> Havana <span style="color: #fc0207!important;">True</span> <span style="color: #fbd301!important;">Colors</span></h1>
-                            </div>
-                        </div>
-                        <div class="block wow fadeInRight" data-wow-duration="900ms" data-wow-delay="800ms">
-                            <h1 style="text-align: center; font-size: 40px" data-wow-duration="300ms" data-wow-delay="600ms">
-                                “For a better understanding, wide open eyes and slow down.”
-                            </h1>
+            </div>
+            <div class="item">
+                <img class="img-responsive" src="{{ asset('images/header/6.jpg') }}" alt="...">
+                <div class="carousel-caption">
+                    <div class="block wow fadeInLeft" data-wow-duration="900ms" data-wow-delay="600ms">
+                        <div class="title">
+                             <h1 class="page-title" style="font-size: 50px;"> Havana <span style="color: #fc0207!important;">True Colors</span></h1>
                         </div>
                     </div>
+                    <div class="block wow fadeInRight" data-wow-duration="900ms" data-wow-delay="800ms">
+                         <h1 class="transparence-captions" style="font-size: 30px;" data-wow-duration="300ms" data-wow-delay="600ms">
+                            “Where True Love Starts.”
+                        </h1>
+                    </div>
                 </div>
-               
+            </div>
+            <div class="item">
+                <img class="img-responsive" src="{{ asset('images/header/5.jpg') }}" alt="...">
+                <div class="carousel-caption" style="padding-left: 400px!important;">
+                    <div class="block wow fadeInLeft" data-wow-duration="900ms" data-wow-delay="600ms">
+                        <div class="title">
+                             <h1 class="page-title" style="font-size: 50px;"> Havana <span style="color: #fc0207!important;">True Colors</span></h1>
+                        </div>
+                    </div>
+                    <div class="block wow fadeInRight" data-wow-duration="900ms" data-wow-delay="800ms">
+                         <h1 class="transparence-captions" style="font-size: 20px;" data-wow-duration="300ms" data-wow-delay="600ms">
+                            “For a better understanding, wide open eyes and slow down.”
+                        </h1>
+                    </div>
+                </div>
             </div>
 
-            <!-- Controls -->
-            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
         </div>
 
-    </section>
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+</section>
 {% endblock %}
 {% block invitation %}
 <div class="title">
     <h3> <span>INVITATION</span></h3>
 </div>
-        <p class="wow fadeInUp" style="text-align:justify;" data-wow-duration="300ms" data-wow-delay="600ms">
-            We are inviting you to a journey to our roots that will explain how everything is connected, always by the hand of a local and its genuine perspective showing you our TRUE COLORS. With wide open eyes you will witness a changing country and its people willing to be in control of this evolution and in doing so, retain its unique personality and appeal.
-            The service we set out to provide is cheerful yet knowledgeable & professional; relaxed yet socially & environmentally committed…that´s our promise to our customers because we go for the extra mile and know what a caring and meaningful relationship is all about.
-        </p>
+<p class="wow fadeInUp" style="text-align:justify;font-size: 20px!important" data-wow-duration="300ms" data-wow-delay="600ms">
+    We are inviting you to a journey to our roots that will explain how everything is connected, always by the hand of a local and its genuine perspective showing you our TRUE COLORS. With wide open eyes you will witness a changing country and its people willing to be in control of this evolution and in doing so, retain its unique personality and appeal.
+    The service we set out to provide is cheerful yet knowledgeable & professional; relaxed yet socially & environmentally committed…that´s our promise to our customers because we go for the extra mile and know what a caring and meaningful relationship is all about.
+</p>
 {% endblock %}
-                        
+
 {% block body %}
 
-    <!--
-    Slider start
-    ============================== -->
-    <section id="slider" class="sdp">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="block wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <div class="title">
-                            <h3> <span style="">INVITATION</span></h3>
+<!--
+Slider start
+============================== -->
+<section id="slider" class="sdp">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
+                    <div class="title">
+                        <h3> <span style="">INVITATION</span></h3>
+                    </div>
+                    <p class="wow fadeInUp" style="text-align:justify;font-size: 20px!important" data-wow-duration="300ms" data-wow-delay="600ms">
+                        We are inviting you to a journey to our roots that will explain how everything is connected, always by the hand of a local and its genuine perspective showing you our TRUE COLORS. With wide open eyes you will witness a changing country and its people willing to be in control of this evolution and in doing so, retain its unique personality and appeal.
+                        The service we set out to provide is cheerful yet knowledgeable & professional; relaxed yet socially & environmentally committed…that´s our promise to our customers because we go for the extra mile and know what a caring and meaningful relationship is all about.
+                    </p>
+
+                </div>
+            </div><!-- .col-md-12 close -->
+        </div><!-- .row close -->
+    </div><!-- .container close -->
+</section><!-- slider close -->
+<!--
+blog start
+============================ -->
+<section id="blog">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block">
+                    <br />
+                    <h1 class="heading transparence-title"> <span> Services</span>  <span></span></h1><br />
+                    <h4 class="wow fadeInUp item-title" data-wow-duration="300ms" data-wow-delay="600ms" style="text-align:justify;color: white;font-size: 25px;">
+                        All services available picking you up in Havana at: cruise terminal, airports, B&B, hotel or any meeting point of your own convenience.
+                    </h4>
+                    <br />
+                    <h4 class="wow fadeInUp item-title" data-wow-duration="300ms" data-wow-delay="600ms" style="text-align:justify;color: white;font-size: 25px;">
+                        Programs below are just a suggestion, we are open to tailor your experience assisting you from our local perspective. We´ll love to hear your ideas. Together we will come out with the best plan to exceed your expectations and plentifully enjoy of your stay.
+                    </h4>
+                    <br />
+                    <h4 class="wow fadeInUp item-title" data-wow-duration="300ms" data-wow-delay="600ms" style="text-align:justify;color: white;font-size: 25px;">
+                        You must know that as part of the emerging private sector in Cuba and caring about local economy, our recommendations will focus locally owned business. Therefore, you will splash your cash and your money will favor local development.
+                    </h4>
+                    <br />
+                    <h4 class="wow fadeInUp item-title" data-wow-duration="300ms" data-wow-delay="600ms" style="text-align:justify;color: white;font-size: 25px;">
+                        All in air conditioned vehicles certified by the State Insurance Company ESSEN and with excellent driving records that will guarantee your security.
+                    </h4>
+
+                    </h2>
+                    <ul class="col-md-12">
+                        <li class="wow fadeInLeft" data-wow-duration="300ms" data-wow-delay="300ms">
+                            <div class="blog-img">
+                                <a class="btn btn-img" href="{{ path('discovering-havana') }}" role="button"><img src="{{ asset('images/blog/blog-img-1.jpg') }}" alt="blog-img"></a>
+                            </div>
+                            <div class="content-right">
+                                <h3>DISCOVERING HAVANA</h3>
+                                <p>
+                                    <a class="btn btn-default orange wow bounceIn" data-wow-duration="500ms" data-wow-delay="1200ms" href="{{ path('discovering-havana') }}" role="button">More Info</a>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="wow fadeInLeft" data-wow-duration="300ms" data-wow-delay="300ms">
+                            <div class="blog-img">
+                                <a class="btn btn-img" href="{{ path('beyond-the-capital') }}" role="button"><img src="{{ asset('images/blog/blog-img-2.jpg') }}" alt="blog-img"></a>
+                            </div>
+                            <div class="content-right">
+                                <h3>BEYOND THE CAPITAL</h3>
+                                <p>
+                                    <a class="btn btn-default orange  wow bounceIn" data-wow-duration="500ms" data-wow-delay="1200ms" href="{{ path('beyond-the-capital') }}" role="button">More Info</a>
+                                </p>
+                            </div>
+                        </li>
+                        <li class=" col-md-offset-3 wow fadeInLeft" data-wow-duration="300ms" data-wow-delay="400ms">
+                            <div class="blog-img">
+                                <a class="btn btn-img" href="{{ path('on-the-road') }}" role="button">  <img src="{{ asset('images/blog/blog-img-3.jpg') }}" alt="blog-img"></a>
+                            </div>
+                            <div class="content-right">
+                                <h3>ON THE ROAD</h3>
+                                <p><a class="btn btn-default orange wow bounceIn" data-wow-duration="500ms" data-wow-delay="1200ms" href="{{ path('on-the-road') }}" role="button">More Info</a></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div><!-- .col-md-12 close -->
+        </div><!-- .row close -->
+    </div><!-- .containe close -->
+</section><!-- #blog close -->
+<!--
+about-us start
+============================== -->
+<section id="about-us">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block">
+                    <img class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="400ms" src="{{ asset('images/cooker-img.png') }}" alt="cooker-img">
+                    <h1 class="heading wow fadeInUp" data-wow-duration="400ms" data-wow-delay="500ms">
+                        ABOUT<span style=""> US</span> <br /> <span></span>
+                    </h1>
+                    <p class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="600ms" style="text-align:justify; color: black;font-size: 20px;">
+                        Our names are Raul and Yaima (husband and wife) both university majored in business and crazy in love with Havana. After working for over fifteen years in tourism and with the experience of being cofounders and co-owners of a successful project like Cuban Connection Tour for over six years, decided(determined) for a new fresh beginning. We are young local entrepreneurs part of the country´s private sector with a true passion that awaits for your arrival.
+                    </p>
+                    <p class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="600ms" style="text-align:justify;color: black;font-size: 20px;">
+                        Our invitation goes for independent-minded visitors who are open to a genuine and personal insight experience. Although different programs have been designed based on our experience, we totally understand each tour is different and unique as you are, that´s why can be perfectly customized. Contacting us we´ll work on the best possible plan for your holidays and experience priceless moments that will become treasured memories. This is the service we set out to provide.
+                    </p>
+                </div>
+            </div><!-- .col-md-12 close -->
+        </div><!-- .row close -->
+    </div><!-- .containe close -->
+</section><!-- #call-to-action close -->
+<!--
+price start
+============================ -->
+<section id="price">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block">
+                    <h1 class="heading wow fadeInUp" data-wow-duration="400ms" data-wow-delay="500ms"  style="margin-top: 50px!important;">
+                        <span style=""> FAQ</span> <br /> <span></span>
+                    </h1>
+                    <div class="panel-group" id="accordion" style="text-align:left;">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseEins">
+                                        1. Best way to contact with Havana True Colors
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseEins" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p class="accordion-toggle-text">Send us the booking form you can find in the website requesting for a service(s). You can also reach us by contacting us at <p><a href="mailto:info@havanatruecolors.com">havanatruecolors@gmail.com</a> or using our contact numbers (53 52440711 and 53 52948403). We´ll get back to you!!!!</p>
+                                </div>
+                            </div>
                         </div>
-                        <p class="wow fadeInUp" style="text-align:justify;" data-wow-duration="300ms" data-wow-delay="600ms">
-                            We are inviting you to a journey to our roots that will explain how everything is connected, always by the hand of a local and its genuine perspective showing you our TRUE COLORS. With wide open eyes you will witness a changing country and its people willing to be in control of this evolution and in doing so, retain its unique personality and appeal.
-                            The service we set out to provide is cheerful yet knowledgeable & professional; relaxed yet socially & environmentally committed…that´s our promise to our customers because we go for the extra mile and know what a caring and meaningful relationship is all about.
-                        </p>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseZwei">
+                                        2. As an independent American tourist, which is the recommended category for me?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseZwei" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                   <p class="accordion-toggle-text">As an American, you need to pick one of 12 categories of authorized travel to Cuba. The broadest category you may currently use to travel independently to Cuba is the Support for the Cuban People category. You will need to abide by the regulations and participate in activities that are in the spirit of the category. To summarize:</p>
+                                    <p class="accordion-toggle-text">•  An independent traveler can travel under this category. </p>
+                                   <p class="accordion-toggle-text">•  A traveler is required to provide support for the Cuban people and promote independent activity intended to strengthen civil society in Cuba.</p>
+                                    <p class="accordion-toggle-text">•  A traveler is required to engage in Support for the Cuban People activities consistent with a full-time schedule. These types of activities include: Meeting with local businessmen, artists, tobacco manufacturers and people who own their own business; explore independent museums; independent markets; dance classes; meeting and engaging with musicians at a show; art shows; discuss Cuban society with locals.</p>
+                                    <p class="accordion-toggle-text">•  A traveler must avoid all transactions with a GAESA-owned (military-owned) business.</p>
 
-                    </div>
-                </div><!-- .col-md-12 close -->
-            </div><!-- .row close -->
-        </div><!-- .container close -->
-    </section><!-- slider close -->
+                                     <p class="accordion-toggle-text">All our programs fall under this category. These are some of the activities that are included and count toward Support for the Cuban People:</p>
+                                    <p class="accordion-toggle-text">1.  Stay at casa particular (B&B homestay) when roundtrips are arranged by Havana True Colors.</p>
+                                    <p class="accordion-toggle-text">2.  Support and engage with local business and independent entrepreneurs like artists, musicians, food vendors, restaurant owners, B&B homestay owners, etc. Whatever your interests, you can find a way to support the Cuban people.</p>
+                                    <p class="accordion-toggle-text">3.  Eat at local restaurant or paladares.</p>
+                                    <p class="accordion-toggle-text">4.  Avoid transactions at military-owned business.</p>
+                                    <p class="accordion-toggle-text">To fit into this category, several programs have been designed and all engage in compliant activities over enough hours to fulfill a full-time schedule. We are open to customized your experience upon request while assisting to ensure that your stay is compliant with the new travel requirements.</p>
+                                    <p class="accordion-toggle-text">This has been stated multiple times, both in the announcement and in the released documentation and Marco Rubio, who was leading this policy change, explicitly outlines how Americans can travel to Cuba under Support for the Cuban People category.</p>
+                                    <p class="accordion-toggle-text">Before new regulations announced by the Trump Administration went into effect, many travelers were able to choose the People to People Educational category. Under the new Cuba travel regulations, a traveler can only choose the People to People category if they are traveling with a group package tour, meaning you can no longer travel independently under that category.</p>
 
-    <!--
-    blog start
-    ============================ -->
-    <section id="blog">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="block">
-                    <br/>
-                    <h1 class="heading transparence-title" > <span> Services</span>  <span></span></h1><br/>
-                         <h4 class="wow fadeInUp item-title" data-wow-duration="300ms" data-wow-delay="600ms" style="text-align:justify;color: white;" >
-                            All services available picking you up in Havana at: cruise terminal, airports, B&B, hotel or any meeting point of your own convenience.
-                        </h4>
-                        <br/>
-                          <h4 class="wow fadeInUp item-title" data-wow-duration="300ms" data-wow-delay="600ms" style="text-align:justify;color: white;" >
-                            Programs below are just a suggestion, we are open to tailor your experience assisting you from our local perspective. We´ll love to hear your ideas. Together we will come out with the best plan to exceed your expectations and plentifully enjoy of your stay.
-                            </h4>
-                                <br/>
-                              <h4 class="wow fadeInUp item-title" data-wow-duration="300ms" data-wow-delay="600ms" style="text-align:justify;color: white;" >
-                            You must know that as part of the emerging private sector in Cuba and caring about local economy, our recommendations will focus locally owned business. Therefore, you will splash your cash and your money will favor local development.</h4>
-                                <br/>
-                              <h4 class="wow fadeInUp item-title" data-wow-duration="300ms" data-wow-delay="600ms" style="text-align:justify;color: white;" >
-                            All in air conditioned vehicles certified by the State Insurance Company ESSEN and with excellent driving records that will guarantee your security.
-                            </h4>
-
-                        </h2>
-                        <ul class="col-md-12">
-                            <li class="wow fadeInLeft" data-wow-duration="300ms" data-wow-delay="300ms">
-                                <div class="blog-img">
-                                     <a class="btn btn-img"  href="{{ path('discovering-havana') }}" role="button"><img src="{{ asset('images/blog/blog-img-1.jpg') }}" alt="blog-img"></a>
                                 </div>
-                                <div class="content-right">
-                                    <h3>DISCOVERING HAVANA</h3>
-                                    <p>
-                                        <a class="btn btn-default orange wow bounceIn"  data-wow-duration="500ms" data-wow-delay="1200ms" href="{{ path('discovering-havana') }}" role="button">More Info</a>
-                                    </p>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseDrei">
+                                        3. Is there a minimum number required?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseDrei" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p class="accordion-toggle-text">Any service can be arranged for solo travelers, no problem! If you are traveling by yourself and looking for the best possible experience with a local as your friend in Cuba, feel free to contact us.</p>
                                 </div>
-                            </li>
-                            <li class="wow fadeInLeft" data-wow-duration="300ms" data-wow-delay="300ms">
-                                <div class="blog-img">
-                                    <a class="btn btn-img" href="{{ path('beyond-the-capital') }}" role="button"><img src="{{ asset('images/blog/blog-img-2.jpg') }}" alt="blog-img"></a>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseVier">
+                                        4. Is there a maximum number of people you can accommodate?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseVier" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p class="accordion-toggle-text">We´ll appreciate you let us know in advance to check availability and evaluate the best way to fully enjoy of the destination. Our preference is to work with small parties to make sure our customers receive a personalized service. </p>
                                 </div>
-                                <div class="content-right">
-                                    <h3>BEYOND THE CAPITAL</h3>
-                                    <p>
-                                        <a class="btn btn-default orange  wow bounceIn" data-wow-duration="500ms" data-wow-delay="1200ms" href="{{ path('beyond-the-capital') }}" role="button">More Info</a>
-                                    </p>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFunf">
+                                        5. Is the service provided by Havana True Colors suitable for LGBTQI travelers?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseFunf" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p class="accordion-toggle-text">Absolutely. We´ll make sure all our customers feel comfortable and enjoy of their time in our country. </p>
                                 </div>
-                            </li>
-                            <li class=" col-md-offset-3 wow fadeInLeft" data-wow-duration="300ms" data-wow-delay="400ms">
-                                <div class="blog-img">
-                                    <a class="btn btn-img" href="{{ path('on-the-road') }}" role="button">  <img src="{{ asset('images/blog/blog-img-3.jpg') }}" alt="blog-img"></a>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseSechs">
+                                        6.  Is it possible to bring children?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseSechs" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p class="accordion-toggle-text">Yes, kids are very welcome to join us. Just consider night activities like Cabaret, Jazz Clubs and bars. Also you should take into consideration that kids are not allowed in the cigar factory tour.</p>
                                 </div>
-                                <div class="content-right">
-                                    <h3>ON THE ROAD</h3>
-                                    <p><a class="btn btn-default orange wow bounceIn" data-wow-duration="500ms" data-wow-delay="1200ms" href="{{ path('on-the-road') }}" role="button">More Info</a></p>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseSieven">
+                                        7.  Will I meet dietary requirements during your service?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseSieven" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p class="accordion-toggle-text">Meals are not included, excepting breakfast during roundtrips. We´ll appreciate you advise us in advance, so this info can be part of your reservation and we can always recommend a suitable place or menu and/or pay special attention. Please note, though, that in some destinations there may be limited or no options for dietary needs.</p>
                                 </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div><!-- .col-md-12 close -->
-            </div><!-- .row close -->
-        </div><!-- .containe close -->
-    </section><!-- #blog close -->
-    <!--
-    about-us start
-    ============================== -->
-    <section id="about-us">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="block">
-                        <img class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="400ms" src="{{ asset('images/cooker-img.png') }}" alt="cooker-img">
-                        <h1 class="heading wow fadeInUp" data-wow-duration="400ms" data-wow-delay="500ms" >
-                            ABOUT<span style=""> US</span> <br/> <span></span>
-                        </h1>
-                        <p class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="600ms" style="text-align:justify; color: black;" >
-                            Our names are Raul and Yaima (husband and wife) both university majored in business and crazy in love with Havana. After working for over fifteen years in tourism and with the experience of being cofounders and co-owners of a successful project like Cuban Connection Tour for over six years, decided(determined) for a new fresh beginning. We are young local entrepreneurs part of the country´s private sector with a true passion that awaits for your arrival.
-                            </p>
-                            <p class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="600ms" style="text-align:justify;color: black;" >
-                    
-                            Our invitation goes for independent-minded visitors who are open to a genuine and personal insight experience. Although different programs have been designed based on our experience, we totally understand each tour is different and unique as you are, that´s why can be perfectly customized. Contacting us we´ll work on the best possible plan for your holidays and experience priceless moments that will become treasured memories. This is the service we set out to provide.
-                        </p>
-                    </div>
-                </div><!-- .col-md-12 close -->
-            </div><!-- .row close -->
-        </div><!-- .containe close -->
-    </section><!-- #call-to-action close -->
-    <!--
-    price start
-    ============================ -->
-        <section id="price">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="block">
-                        <h1 class="heading wow fadeInUp" data-wow-duration="300ms" data-wow-delay="300ms"><span style="">FAQ</span>  <span></span></h1>
-                        <div class="panel-group" id="accordion" style="text-align:justify;">
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-         1. Best way to contact with Havana True Colors
-        </a>
-      </h4>
-    </div>
-    <div id="collapseOne" class="panel-collapse collapse">
-      <div class="panel-body">
-      Send us the booking form you can find in the website requesting for a service(s). You can also reach us by contacting us at havanatruecolors@gmail.com or using our contact numbers (53 52440711 and 53 52948403). We´ll get back to you!!!!
-      </div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-         2. As an independent American tourist, which is the recommended category for me?
-        </a>
-      </h4>
-    </div>
-    <div id="collapseTwo" class="panel-collapse collapse">
-      <div class="panel-body">
-      <p>As an American, you need to pick one of 12 categories of authorized travel to Cuba. The broadest category you may currently use to travel independently to Cuba is the Support for the Cuban People category. You will need to abide by the regulations and participate in activities that are in the spirit of the category. To summarize:</p>
-      <p>•  An independent traveler can travel under this category. </p>
-      <p>•  A traveler is required to provide support for the Cuban people and promote independent activity intended to strengthen civil society in Cuba.</p>
-      <p>•  A traveler is required to engage in Support for the Cuban People activities consistent with a full-time schedule. These types of activities include: Meeting with local businessmen, artists, tobacco manufacturers and people who own their own business; explore independent museums; independent markets; dance classes; meeting and engaging with musicians at a show; art shows; discuss Cuban society with locals.</p>
-      <p>•  A traveler must avoid all transactions with a GAESA-owned (military-owned) business.</p>
-
-      All our programs fall under this category. These are some of the activities that are included and count toward Support for the Cuban People:
-<p>1.  Stay at casa particular (B&B homestay) when roundtrips are arranged by Havana True Colors.</p>
-<p>2.  Support and engage with local business and independent entrepreneurs like artists, musicians, food vendors, restaurant owners, B&B homestay owners, etc. Whatever your interests, you can find a way to support the Cuban people.</p>
-<p>3.  Eat at local restaurant or paladares.</p>
-<p>4.  Avoid transactions at military-owned business.</p>
-<p>To fit into this category, several programs have been designed and all engage in compliant activities over enough hours to fulfill a full-time schedule. We are open to customized your experience upon request while assisting to ensure that your stay is compliant with the new travel requirements.</p>
-<p>This has been stated multiple times, both in the announcement and in the released documentation and Marco Rubio, who was leading this policy change, explicitly outlines how Americans can travel to Cuba under Support for the Cuban People category.</p>
-<p>Before new regulations announced by the Trump Administration went into effect, many travelers were able to choose the People to People Educational category. Under the new Cuba travel regulations, a traveler can only choose the People to People category if they are traveling with a group package tour, meaning you can no longer travel independently under that category.</p>
-
-      </div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-         3. Is there a minimum number required?
-        </a>
-      </h4>
-    </div>
-    <div id="collapseThree" class="panel-collapse collapse">
-      <div class="panel-body">
-       <p>Any service can be arranged for solo travelers, no problem! If you are traveling by yourself and looking for the best possible experience with a local as your friend in Cuba, feel free to contact us.</p>
-      </div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
-         4. Is there a maximum number of people you can accommodate?
-        </a>
-      </h4>
-    </div>
-    <div id="collapseFour" class="panel-collapse collapse">
-      <div class="panel-body">
-       <p>We´ll appreciate you let us know in advance to check availability and evaluate the best way to fully enjoy of the destination. Our preference is to work with small parties to make sure our customers receive a personalized service. </p>
-      </div>
-    </div>
-  </div>
-    <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
-         5. Is the service provided by Havana True Colors suitable for LGBTQI travelers?
-        </a>
-      </h4>
-    </div>
-    <div id="collapseFive" class="panel-collapse collapse">
-      <div class="panel-body">
-       <p>Absolutely. We´ll make sure all our customers feel comfortable and enjoy of their time in our country. </p>
-      </div>
-    </div>
-  </div>
-      <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
-        6.  Is it possible to bring children?
-        </a>
-      </h4>
-    </div>
-    <div id="collapseSix" class="panel-collapse collapse">
-      <div class="panel-body">
-       <p>Yes, kids are very welcome to join us. Just consider night activities like Cabaret, Jazz Clubs and bars. Also you should take into consideration that kids are not allowed in the cigar factory tour.</p>
-      </div>
-    </div>
-  </div>
-        <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">
-        7.  Will I meet dietary requirements during your service?
-        </a>
-      </h4>
-    </div>
-    <div id="collapseSeven" class="panel-collapse collapse">
-      <div class="panel-body">
-       <p>Meals are not included, excepting breakfast during roundtrips. We´ll appreciate you advise us in advance, so this info can be part of your reservation and we can always recommend a suitable place or menu and/or pay special attention. Please note, though, that in some destinations there may be limited or no options for dietary needs.</p>
-      </div>
-    </div>
-  </div>
-      <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseAcht">
-        8.  If coming via cruise and can´t be on time, will I still meet you if I´m late?
-        </a>
-      </h4>
-    </div>
-    <div id="collapseAcht" class="panel-collapse collapse">
-      <div class="panel-body">
-       <p>Yes, indeed. We´ll be waiting for you up to two hours after the agreed pick up time. In case the cruise is delayed and is possible for you to let us know in advance, it will be much appreciated, so we can agree a new pick up time.</p>
-             <p>It is very common for cruisers to be bit late. Since we only provide private tours, this wait will not be an inconvenient for other travelers. </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-                        <div class="pricing-list">
-
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseAcht">
+                                        8.  If coming via cruise and can´t be on time, will I still meet you if I´m late?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseAcht" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p class="accordion-toggle-text">Yes, indeed. We´ll be waiting for you up to two hours after the agreed pick up time. In case the cruise is delayed and is possible for you to let us know in advance, it will be much appreciated, so we can agree a new pick up time.</p>
+                                    <p class="accordion-toggle-text">It is very common for cruisers to be bit late. Since we only provide private tours, this wait will not be an inconvenient for other travelers. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseNeun">
+                                       9.   Where will I be picked up and at what time?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseNeun" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p class="accordion-toggle-text">Our meeting point will be set at your accommodation (B&B or hotel), airport or cruise terminal. At the end of the service we will drive you back or drop you off wherever you decide. Any of our services can be reserved through our website: <a href="http://www.havanatruecolors.com">www.havanatruecolors.com</a> or directly to <p class="accordion-toggle-text"><a href="mailto:havanatruecolors@gmail.com">havanatruecolors@gmail.com</a>.</p>
+                                    <p class="accordion-toggle-text">In our website you can find suggested pick up time for the different services. If you prefer differently, please, let us know as part of your request and we will be back to you with an answer.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseZehn">
+                                        10. Will I share with other travelers?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseZehn" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p class="accordion-toggle-text">No, Havana True Colors will arrange private tours only.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseElf">
+                                        11. Is it possible to make changes to your standard programs / itineraries?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseElf" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p class="accordion-toggle-text">Programs can be customized upon request, we will very much appreciate you let us know as part of your booking form and together start working on the best possible plan for your holidays.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseZwelf">
+                                        12. Will services be cancelled in case of bad weather?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseZwelf" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p class="accordion-toggle-text">Cuba is a tropical country and it is very common to have some rain, especially during summer time. We don't want this affects your experience so you don´t need to because of this. If tours are cancelled under extreme circumstances because of weather, we will contact you, that is why as part of your booking info we will have a phone number or email address where to contact you.</p>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseDreizehn">
+                                        13.  Can I make changes to an existing booking?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseDreizehn" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p class="accordion-toggle-text">You can make changes to your reservation, a different meeting point, pick up time, including adding extra people to your party or more requests. We will respond you with details upon your request and with a new confirmation.</p>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseVierzehn">
+                                       14.  What happens in case I need to cancel my booking?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseVierzehn" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p class="accordion-toggle-text">In that case, your early notice is highly appreciated and we will be looking forward to hearing from you in the near future.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFunfzehn">
+                                       15.  Will tips be accepted?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseFunfzehn" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p class="accordion-toggle-text">Will be accepted and very welcome. It is under your discretion and depending on your satisfaction and the service provided. There´s no bad or good tip…we care about happy customers!</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div><!-- .col-md-12 close -->
-            </div><!-- .row close -->
-        </div><!-- .containe close -->
-    </section><!-- #price close -->
-    
-    <!--
-    subscribe start
-    ============================ -->
-    <section id="americanT">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="block">
-                         <h1 class="heading wow fadeInUp" data-wow-duration="300ms" data-wow-delay="300ms">American <span style="">Tourists</span>  <span></span></h1>
-                         <p class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="600ms" style="text-align:justify; color: black;" >
-                         Our services are under the Support for the Cuban People visa category therefore are OFAC compliance. To fit into the category, we have designed programs participating in activities that engage in compliant itineraries to fulfill a full-time schedule. We are open to tailor your tour, assisting you from our local perspective to ensure that your tour meets the new travel requirements at the same time that we are inviting you to plentifully enjoy of your stay in our country.</p>
-                        
+
+                    <div class="pricing-list">
 
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    <!--
-    CONTACT US  start
-    ============================= -->
-    <section id="contact-us">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="block">
-                        <h1 class="heading wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">CONTACT<span style=""> US</span></h1>
-                        <!--  <h3 class="title wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">Sign Up for <span>Email Alerts</span> </h3>-->
-                        {{ form_start(form,{'action': path('contact'), 'method': 'POST'}) }}
-                            <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="600ms">
-                                {{ form_widget(form.fullName, {'attr': {'class': 'form-control','placeholder':'Full Name'}}) }}
-                            </div>
-                            <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="800ms">
-                                {{ form_widget(form.email, {'attr': {'class': 'form-control','placeholder':'Email Address'}}) }}                                
-                            </div>                            
-                            <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1000ms">
-                                {{ form_widget(form.additionalRequest, {'attr': {'class': 'form-control','rows': '3','placeholder':'Additional Requests'}}) }}                                
-                            </div>
-                            <input type='submit' class="btn btn-default wow bounceIn" data-wow-duration="500ms" data-wow-delay="1300ms" value="Send Now"/>
-                        {{ form_end(form) }}
-                    </div>
-                </div><!-- .col-md-12 close -->
-            </div><!-- .row close -->
-        </div><!-- .container close -->
-    </section><!-- #contact-us close -->
+            </div><!-- .col-md-12 close -->
+        </div><!-- .row close -->
+    </div><!-- .containe close -->
+</section><!-- #price close -->
+<!--
 
+<!--
+CONTACT US  start
+============================= -->
+<section id="contact-us">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block">
+                    <h1 class="heading wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">CONTACT<span style=""> US</span></h1>
+                    <!--  <h3 class="title wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">Sign Up for <span>Email Alerts</span> </h3>-->
+                    {{ form_start(form,{'action': path('book'), 'method': 'POST'}) }}
+                    <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="500ms">                        
+                        {{ form_widget(form.tour, {'attr': {'class': 'form-control',},}) }}
+                    </div>
+                    <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="600ms">
+                        {{ form_widget(form.fullName, {'attr': {'class': 'form-control','placeholder':'Full Name'}}) }}
+                    </div>
+                    <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="800ms">
+                        {{ form_widget(form.email, {'attr': {'class': 'form-control','placeholder':'Email Address'}}) }}
+                    </div>
+                    <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="600ms">
+                        {{ form_widget(form.pax, {'attr': {'class': 'form-control','placeholder':'Number of People'}}) }}
+                    </div>
+                    <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="800ms">
+                        {{ form_widget(form.date, {'attr': {'class': 'form-control','placeholder':'Request Date'}}) }}
+                    </div>
+                    <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1000ms">
+                        {{ form_widget(form.additionalRequest, {'attr': {'class': 'form-control','rows': '3','placeholder':'Additional Requests'}}) }}
+                    </div>
+                    <input type='submit' class="btn btn-default wow bounceIn btn-submit text-center" data-wow-duration="500ms" data-wow-delay="1300ms" value="Send Now" />
+                    {{ form_end(form) }}
+                </div>
+            </div><!-- .col-md-12 close -->
+        </div><!-- .row close -->
+    </div><!-- .container close -->
+</section><!-- #contact-us close -->
     {% endblock %}
     {% block scripts %}
-    <script>
-        $(document).ready(function(){
-            $('#nav').onePageNav({
-                currentClass: 'current',
-                changeHash: false,
-                scrollSpeed: 15000,
-                scrollThreshold: 0.5,
-                filter: '',
-                easing: 'easeInOutExpo'
-                });
+<script>
+    $(document).ready(function () {
+        $('#nav').onePageNav({
+            currentClass: 'current',
+            changeHash: false,
+            scrollSpeed: 15000,
+            scrollThreshold: 0.5,
+            filter: '',
+            easing: 'easeInOutExpo'
+        });
 
-                $('#top-nav').onePageNav({
-                    currentClass: 'active',
-                    changeHash: true,
-                    scrollSpeed: 1200
-                });
-            });
-    </script>
+        $('#top-nav').onePageNav({
+            currentClass: 'active',
+            changeHash: true,
+            scrollSpeed: 1200
+        });
+    });
+</script>
     {% endblock %}

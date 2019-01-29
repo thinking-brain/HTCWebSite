@@ -4,6 +4,8 @@ namespace AppBundle\Controller;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use AppBundle\Form\BookingType;
+use AppBundle\Entity\Booking;
 
 
 class BeyondTheCapitalController extends Controller
@@ -13,7 +15,11 @@ class BeyondTheCapitalController extends Controller
      */
     public function index()
     {
-        return $this->render('beyond-the-capital/index.html.twig');
+        // build the form ...
+        $contact = new Booking();          
+        $form = $this->createForm(new BookingType(), $contact);
+        // end build the form
+        return $this->render('beyond-the-capital/index.html.twig',array( 'form' => $form->createView(),));        
     }
 
     /**
@@ -21,7 +27,11 @@ class BeyondTheCapitalController extends Controller
      */
     public function trinidad()
     {
-        return $this->render('beyond-the-capital/trinidad.html.twig');
+        // build the form ...
+        $contact = new Booking();          
+        $form = $this->createForm(new BookingType(), $contact);
+        // end build the form
+        return $this->render('beyond-the-capital/trinidad.html.twig',array( 'form' => $form->createView(),));
     }
 
     /**
@@ -29,7 +39,11 @@ class BeyondTheCapitalController extends Controller
      */
     public function viñales()
     {
-        return $this->render('beyond-the-capital/viñales.html.twig');
+        // build the form ...
+        $contact = new Booking();          
+        $form = $this->createForm(new BookingType(), $contact);
+        // end build the form
+        return $this->render('beyond-the-capital/viñales.html.twig',array( 'form' => $form->createView(),));
     }
 
     /**
@@ -37,7 +51,11 @@ class BeyondTheCapitalController extends Controller
      */
     public function zapata()
     {
-        return $this->render('beyond-the-capital/zapata.html.twig');
+        // build the form ...
+        $contact = new Booking();          
+        $form = $this->createForm(new BookingType(), $contact);
+        // end build the form
+        return $this->render('beyond-the-capital/zapata.html.twig',array( 'form' => $form->createView(),));
     }
 
     /**
@@ -45,6 +63,10 @@ class BeyondTheCapitalController extends Controller
      */
     public function varadero()
     {
-        return $this->render('beyond-the-capital/varadero.html.twig');
+        // build the form ...
+        $contact = new Booking();          
+        $form = $this->createForm(new BookingType(), $contact);
+        // end build the form
+        return $this->render('beyond-the-capital/varadero.html.twig',array( 'form' => $form->createView(),));
     }
 }

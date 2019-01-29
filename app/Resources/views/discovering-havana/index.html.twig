@@ -11,7 +11,7 @@
                 <div class="col-md-12">
                     <div class="block">
                         <h1 class="heading transparence-title">DISCOVERING <span> HAVANA</span>  <span></span></h1><br/>
-                        <h4 class="white_text title wow fadeInLeft transparence-title" data-wow-duration="500ms" data-wow-delay="300ms" style="text-align:justify;">Havana 500th Anniversary is coming soon and this city holds a real fascination for those planning to visit our country, no faded glory in this city, past and present are the perfect combination and this fine cocktail is part of its appeal for travelers. </h4>
+                        <h4 class="white_text title wow fadeInLeft item-title" data-wow-duration="500ms" data-wow-delay="300ms" style="text-align:justify;">Havana 500th Anniversary is coming soon and this city holds a real fascination for those planning to visit our country, no faded glory in this city, past and present are the perfect combination and this fine cocktail is part of its appeal for travelers. </h4>
 
 
                         <ul class="col-md-12">
@@ -59,6 +59,15 @@
                                     </p>
                                 </div>
                             </li>
+                             <li class=" col-md-offset-3 wow fadeInLeft" data-wow-duration="300ms" data-wow-delay="400ms">
+                            <div class="blog-img">
+                                <a class="btn btn-img" href="{{ path('from-our-kitchen') }}" role="button">  <img src="{{ asset('images/blog/blog-img-3.jpg') }}" alt="blog-img"></a>
+                            </div>
+                            <div class="content-right">
+                                <h3>“From our kitchen”</h3>
+                                <p><a class="btn btn-default orange wow bounceIn" data-wow-duration="500ms" data-wow-delay="1200ms" href="{{ path('from-our-kitchen') }}" role="button">More Info</a></p>
+                            </div>
+                        </li>
             
                         </ul>
                     </div>
@@ -66,6 +75,40 @@
             </div><!-- .row close -->
         </div><!-- .containe close -->
     </section><!-- #blog close -->
-   
-
+    <!--
+CONTACT US  start
+============================= -->
+<section id="contact-us">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block">
+                    <h1 class="heading wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">CONTACT<span style=""> US</span></h1>
+                    <!--  <h3 class="title wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">Sign Up for <span>Email Alerts</span> </h3>-->
+                    {{ form_start(form,{'action': path('book'), 'method': 'POST'}) }}
+                    <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="500ms">                        
+                        {{ form_widget(form.tour, {'attr': {'class': 'form-control',}}) }}
+                    </div>
+                    <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="600ms">
+                        {{ form_widget(form.fullName, {'attr': {'class': 'form-control','placeholder':'Full Name'}}) }}
+                    </div>
+                    <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="800ms">
+                        {{ form_widget(form.email, {'attr': {'class': 'form-control','placeholder':'Email Address'}}) }}
+                    </div>
+                    <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="600ms">
+                        {{ form_widget(form.pax, {'attr': {'class': 'form-control','placeholder':'Number of People'}}) }}
+                    </div>
+                    <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="800ms">
+                        {{ form_widget(form.date, {'attr': {'class': 'form-control','placeholder':'Request Date'}}) }}
+                    </div>
+                    <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1000ms">
+                        {{ form_widget(form.additionalRequest, {'attr': {'class': 'form-control','rows': '3','placeholder':'Additional Requests'}}) }}
+                    </div>
+                    <input type='submit' class="btn btn-default wow bounceIn btn-submit text-center" data-wow-duration="500ms" data-wow-delay="1300ms" value="Send Now" />
+                    {{ form_end(form) }}
+                </div>
+            </div><!-- .col-md-12 close -->
+        </div><!-- .row close -->
+    </div><!-- .container close -->
+</section><!-- #contact-us close -->
 {% endblock %}
