@@ -12,40 +12,7 @@ use AppBundle\Entity\Booking;
 
 class MailerController extends Controller
 {
-    /**
-     * @Route("/contact/", name="contact", )
-     */
-    public function contact(Request $request)
-    {
-        // build the form ...
-        $contact = new Contact();
-        $form = $this->createForm(new ContactType(), $contact);      
-        // end build the form
-        $form->handleRequest($request);
-        
-        if ($form->isSubmitted() && $form->isValid())
-         {            
-            $message = (new \Swift_Message('Havana True Colors'))
-            ->setFrom('tours@havanatruecolors.com')   
-            ->setReplyTo($contact->getEmail())         
-            ->setTo('havanatruecolors@gmail.com')
-            ->setBody(
-                $this->renderView(                    
-                    'emails/reservacion.html.twig',
-                    array('name' => $contact->getFullName())
-                ),
-                'text/html'
-            );
-            $this->get('mailer')->send($message);
-            $em = $this->getDoctrine()->getManager();
-            $em->persist($contact);            
-            $em->flush();
-            return $this->redirectToRoute('notice');
-        }        
-        // render the template
-        return $this->redirectToRoute('index');
-    }
-
+    
     /**
      * @Route("/book/", name="book", )
      */
@@ -66,7 +33,13 @@ class MailerController extends Controller
             ->setBody(
                 $this->renderView(                    
                     'emails/reservacion.html.twig',
-                    array('name' => $booking->getFullName())
+                    array(
+                        'name' => $booking->getFullName(),
+                        'date' => $booking->getDate(),
+                        'pax' => $booking->getPax(),
+                        'tour' => $booking->getTour(),
+                        'other' => $booking->getAdditionalRequest(),
+                        )
                 ),
                 'text/html'
             );
