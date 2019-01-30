@@ -1,4 +1,6 @@
 {# templates/emails/registration.html.twig #}
-<h3>You did it! You registered!</h3>
+<h3>Reserva</h3>
 
-Hola {{ name }}! Esto es una prueba.
+<p>El cliente <strong>{{name}}</strong> solicita reservar con {{pax}} personas para la fecha {{date|date('dd/MM/yyyy')}} el tour {{tour}}.</p>
+<p> Otra informacion {{other}}</p>
+
