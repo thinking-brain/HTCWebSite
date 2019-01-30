@@ -48,7 +48,7 @@ a:active,
 a:focus,
 a:active {
   text-decoration: none !important;
-  font-size: 15px;
+  font-size: 20px;
 }
 /*============== Mixins style start ================*/
 .overlay-effect {
@@ -93,7 +93,7 @@ a:active {
 --*/
 .title {
   color: #2E2E2E;
-  text-transform: uppercase;
+  /*--text-transform: uppercase;--*/
   padding: 30px 0px;
 }
 .title span {
@@ -185,7 +185,7 @@ nav .block .navbar-default .navbar-nav > li > a:before {
   width: 0;
 }
 nav .block .navbar-default .navbar-nav > li > a:hover:before {
-  background-color: #e94c3d;
+  background-color: #ff530a;
   content: "";
   width: 100%;
 }
@@ -206,7 +206,7 @@ nav .block .navbar-default .navbar-nav > li.current > a:before {
   -o-transition: .3s all;
   transition: .3s all;
   width: 100%;
-  background-color: #e94c3d;
+  background-color: #ff530a;
 }
 nav .block .navbar-default .navbar-nav > .active > a,
 nav .block .navbar-default .navbar-nav > .active > a:focus,
@@ -221,7 +221,7 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
   bottom: 0px;
   width: 100%;
   height: 2px;
-  background: #e94c3d;
+  background: #ff530a;
 }
 /*--
     slider Start
@@ -423,7 +423,7 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
 .orange {
   
 
-  background: #e94c3d;
+  background: #ff530a;
   color: #fff;
  
 }
@@ -799,13 +799,15 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
   background-color: rgba(0, 0, 0, 0.5);
   padding-left:10px!important; 
   padding-right:10px!important;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .transparence-captions{
 
-  background-color: rgba(0.1, 0, 0, 0.1) !important;
+  background-color: rgba(0, 0, 0, 0.5) !important;
   text-align: center; 
+  font-size: 30px!important;
+  font-family: Cambria;
   color: #fbd301!important;
 }
 
@@ -824,19 +826,19 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
 }
 
 .page-title{
-   color: #0265fc!important;
-   -webkit-text-stroke-width: 1px;
-   -webkit-text-stroke-color: white;
-   /*--font-family: Righteous--*/
-   background-color: rgba(0.1, 0, 0, 0.1) !important;
+  color: #0265fc!important;
+  font-size: 70px!important;
+  text-shadow: 2px 2px 2px #FFFFFF;
 
 }
 
 .transparence-title{
-
   background-color: rgba(0, 0, 0, 0.5) !important;
   padding-left:10px!important; 
-  padding-right:10px!important;
+  padding-right:10px!important; 
+  color:white!important;
+  margin-top: 50px!important;
+
 
 }
 
@@ -844,14 +846,14 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
   padding: 10px 0px!important;
 }
 
-.transparence-title{
-  margin-top: 50px!important;
-  text-shadow: 2px 2px 2px #FFFFFF;
-}
-
 .btn-img{
   padding: 0px 0px!important;
   border: 0px solid transparent;
   background: white!important;
+}
+
+.white-text{
+ 
+  color: white!important;
 }
 
