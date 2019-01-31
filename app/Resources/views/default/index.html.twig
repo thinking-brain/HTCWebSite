@@ -13,8 +13,8 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
             <div class="item active">
-                <img class="img-responsive" src="{{ asset('images/header/1.jpg') }}" alt="...">
-                <div class="carousel-caption" style="margin-bottom: 250px!important;padding-left: 350px!important;">
+                <img class="img-responsive imagen-sm" src="{{ asset('images/header/1.jpg') }}" alt="...">
+                <div class="carousel-caption carousel-caption-eins">
                     <div class="block wow fadeInLeft" data-wow-duration="900ms" data-wow-delay="600ms">
                         <div class="title">
                             <h1 class="page-title"> Havana <span style="color: #fc0207!important;" class="subTitles">True Colors</span></h1>
@@ -28,8 +28,8 @@
                 </div>
             </div>
             <div class="item">
-                <img class="img-responsive" src="{{ asset('images/header/2.jpg') }}" alt="...">
-                <div class="carousel-caption" style="padding-right: 400px!important;">
+                <img class="img-responsive imagen-sm" src="{{ asset('images/header/2.jpg') }}" alt="...">
+                <div class="carousel-caption carousel-caption-zwei">
                     <div class="block wow fadeInLeft" data-wow-duration="900ms" data-wow-delay="600ms">
                         <div class="title">
                              <h1 class="page-title" style="font-size: 50px;"> Havana <span style="color: #fc0207!important;" class="subTitles">True Colors</span></h1>
@@ -44,8 +44,8 @@
                 </div>
             </div>
             <div class="item">
-                <img class="img-responsive" src="{{ asset('images/header/3.jpg') }}" alt="...">
-                <div class="carousel-caption">
+                <img class="img-responsive imagen-sm" src="{{ asset('images/header/3.jpg') }}" alt="...">
+                <div class="carousel-caption carousel-caption-drei">
                     <div class="block wow fadeInLeft" data-wow-duration="900ms" data-wow-delay="600ms">
                         <div class="title">
                             <h1 class="page-title"> Havana <span style="color: #fc0207!important;" class="subTitles">True Colors</span></h1>
@@ -59,8 +59,8 @@
                 </div>
             </div>
             <div class="item">
-                <img class="img-responsive" src="{{ asset('images/header/4.jpg') }}" alt="...">
-                <div class="carousel-caption" style="margin-bottom: 300px!important;padding-right: 400px!important;">
+                <img class="img-responsive imagen-sm" src="{{ asset('images/header/4.jpg') }}" alt="...">
+                <div class="carousel-caption carousel-caption-vier" >
                     <div class="block wow fadeInLeft" data-wow-duration="900ms" data-wow-delay="600ms">
                         <div class="title">
                              <h1 class="page-title"> Havana <span style="color: #fc0207!important;" class="subTitles">True Colors</span></h1>
@@ -74,8 +74,8 @@
                 </div>
             </div>
             <div class="item">
-                <img class="img-responsive" src="{{ asset('images/header/6.jpg') }}" alt="...">
-                <div class="carousel-caption">
+                <img class="img-responsive imagen-sm" src="{{ asset('images/header/6.jpg') }}" alt="...">
+                <div class="carousel-caption carousel-caption-funf">
                     <div class="block wow fadeInLeft" data-wow-duration="900ms" data-wow-delay="600ms">
                         <div class="title">
                              <h1 class="page-title"> Havana <span style="color: #fc0207!important;" class="subTitles">True Colors</span></h1>
@@ -89,8 +89,8 @@
                 </div>
             </div>
             <div class="item">
-                <img class="img-responsive" src="{{ asset('images/header/5.jpg') }}" alt="...">
-                <div class="carousel-caption" style="padding-left: 400px!important;">
+                <img class="img-responsive imagen-sm" src="{{ asset('images/header/5.jpg') }}" alt="...">
+                <div class="carousel-caption carousel-caption-sechs" >
                     <div class="block wow fadeInLeft" data-wow-duration="900ms" data-wow-delay="600ms">
                         <div class="title">
                              <h1 class="page-title"> Havana <span style="color: #fc0207!important;" class="subTitles">True Colors</span></h1>
@@ -115,6 +115,7 @@
             <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
+
     </div>
 
 </section>
@@ -122,12 +123,16 @@
 {% block invitation %}
 
 <div class="title">
-    <h3> <span>INVITATION</span></h3>
+    <h3> <span><i class="fa fa-envelope"></i>INVITATION</span></h3>
 </div>
-<p class="wow fadeInUp" style="text-align:justify;font-size: 20px!important" data-wow-duration="300ms" data-wow-delay="600ms">
+
+</div>
+<h4>
+<p class="wow fadeInUp invitation-info"  data-wow-duration="300ms" data-wow-delay="600ms">
     We are inviting you to a journey to our roots that will explain how everything is connected, always by the hand of a local and its genuine perspective showing you our TRUE COLORS. With wide open eyes you will witness a changing country and its people willing to be in control of this evolution and in doing so, retain its unique personality and appeal.
-    The service we set out to provide is cheerful yet knowledgeable & professional; relaxed yet socially & environmentally committed…that´s our promise to our customers because we go for the extra mile and know what a caring and meaningful relationship is all about.
+    The service we set out to provide is cheerful yet knowledgeable & professional; relaxed yet socially & environmentally committed… that´s our promise to our customers because we go for the extra mile and know what a caring and meaningful relationship is all about.
 </p>
+</h4>
 {% endblock %}
 
 {% block body %}
@@ -141,13 +146,14 @@ Slider start
             <div class="col-md-12">              
                 <div class="block wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
                     <div class="title">
-                        <h3> <span>INVITATION</span></h3>
+                        <h3> <span><i class="fa fa-envelope"></i>INVITATION</span></h3>
                     </div>
-                    <p class="wow fadeInUp" style="text-align:justify;font-size: 20px!important" data-wow-duration="300ms" data-wow-delay="600ms">
+<h4>
+                    <p class="wow fadeInUp invitation-info" data-wow-duration="300ms" data-wow-delay="600ms">
                         We are inviting you to a journey to our roots that will explain how everything is connected, always by the hand of a local and its genuine perspective showing you our TRUE COLORS. With wide open eyes you will witness a changing country and its people willing to be in control of this evolution and in doing so, retain its unique personality and appeal.
-                        The service we set out to provide is cheerful yet knowledgeable & professional; relaxed yet socially & environmentally committed…that´s our promise to our customers because we go for the extra mile and know what a caring and meaningful relationship is all about.
+                        The service we set out to provide is cheerful yet knowledgeable & professional; relaxed yet socially & environmentally committed… that´s our promise to our customers because we go for the extra mile and know what a caring and meaningful relationship is all about.
                     </p>
-
+</h4>
                 </div>
             </div><!-- .col-md-12 close -->
         </div><!-- .row close -->
@@ -170,19 +176,19 @@ blog start
                 <div class="block">
                     <br />
                    
-                    <h4 class="wow fadeInUp item-title" data-wow-duration="300ms" data-wow-delay="600ms" style="text-align:justify;color: white;font-size: 25px;">
+                    <h4 class="wow fadeInUp item-title services-info" data-wow-duration="300ms" data-wow-delay="600ms" >
                         All services available picking you up in Havana at: cruise terminal, airports, B&B, hotel or any meeting point of your own convenience.
                     </h4>
                     <br />
-                    <h4 class="wow fadeInUp item-title" data-wow-duration="300ms" data-wow-delay="600ms" style="text-align:justify;color: white;font-size: 25px;">
+                    <h4 class="wow fadeInUp item-title services-info" data-wow-duration="300ms" data-wow-delay="600ms" >
                         Programs below are just a suggestion, we are open to tailor your experience assisting you from our local perspective. We´ll love to hear your ideas. Together we will come out with the best plan to exceed your expectations and plentifully enjoy of your stay.
                     </h4>
                     <br />
-                    <h4 class="wow fadeInUp item-title" data-wow-duration="300ms" data-wow-delay="600ms" style="text-align:justify;color: white;font-size: 25px;">
+                    <h4 class="wow fadeInUp item-title services-info" data-wow-duration="300ms" data-wow-delay="600ms" >
                         You must know that as part of the emerging private sector in Cuba and caring about local economy, our recommendations will focus locally owned business. Therefore, you will splash your cash and your money will favor local development.
                     </h4>
                     <br />
-                    <h4 class="wow fadeInUp item-title" data-wow-duration="300ms" data-wow-delay="600ms" style="text-align:justify;color: white;font-size: 25px;">
+                    <h4 class="wow fadeInUp item-title services-info" data-wow-duration="300ms" data-wow-delay="600ms" >
                         All in air conditioned vehicles certified by the State Insurance Company ESSEN and with excellent driving records that will guarantee your security.
                     </h4>
 
@@ -237,10 +243,10 @@ about-us start
                     <h1 class="heading wow fadeInUp seccionTitle" data-wow-duration="400ms" data-wow-delay="500ms">
                         ABOUT<span style=""> US</span> <br /> <span></span>
                     </h1>
-                    <p class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="600ms" style="text-align:justify; color: black;font-size: 20px;">
+                    <p class="wow fadeInUp about-info" data-wow-duration="300ms" data-wow-delay="600ms" style="text-align:justify; color: black;font-size: 20px;">
                         Our names are Raul and Yaima (husband and wife) both university majored in business and crazy in love with Havana. After working for over fifteen years in tourism and with the experience of being cofounders and co-owners of a successful project like Cuban Connection Tour for over six years, decided(determined) for a new fresh beginning. We are young local entrepreneurs part of the country´s private sector with a true passion that awaits for your arrival.
                     </p>
-                    <p class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="600ms" style="text-align:justify;color: black;font-size: 20px;">
+                    <p class="wow fadeInUp about-info" data-wow-duration="300ms" data-wow-delay="600ms" style="text-align:justify;color: black;font-size: 20px;">
                         Our invitation goes for independent-minded visitors who are open to a genuine and personal insight experience. Although different programs have been designed based on our experience, we totally understand each tour is different and unique as you are, that´s why can be perfectly customized. Contacting us we´ll work on the best possible plan for your holidays and experience priceless moments that will become treasured memories. This is the service we set out to provide.
                     </p>
                 </div>
@@ -290,20 +296,20 @@ price start
                             </div>
                             <div id="collapseZwei" class="panel-collapse collapse">
                                 <div class="panel-body">
-                                   <p class="accordion-toggle-text">As an American, you need to pick one of 12 categories of authorized travel to Cuba. The broadest category you may currently use to travel independently to Cuba is the Support for the Cuban People category. You will need to abide by the regulations and participate in activities that are in the spirit of the category. To summarize:</p><br/>
-                                    <p class="accordion-toggle-text">•  An independent traveler can travel under this category.</p><br/>
-                                   <p class="accordion-toggle-text">•  A traveler is required to provide support for the Cuban people and promote independent activity intended to strengthen civil society in Cuba.</p><br/>
-                                    <p class="accordion-toggle-text">•  A traveler is required to engage in Support for the Cuban People activities consistent with a full-time schedule. These types of activities include: Meeting with local businessmen, artists, tobacco manufacturers and people who own their own business; explore independent museums; independent markets; dance classes; meeting and engaging with musicians at a show; art shows; discuss Cuban society with locals.</p><br/>
-                                    <p class="accordion-toggle-text">•  A traveler must avoid all transactions with a GAESA-owned (military-owned) business.</p><br/>
+                                   <p class="accordion-toggle-text">As an American, you need to pick one of 12 categories of authorized travel to Cuba. The broadest category you may currently use to travel independently to Cuba is the Support for the Cuban People category. You will need to abide by the regulations and participate in activities that are in the spirit of the category. To summarize:</p>
+                                    <p class="accordion-toggle-text">•  An independent traveler can travel under this category.</p>
+                                   <p class="accordion-toggle-text">•  A traveler is required to provide support for the Cuban people and promote independent activity intended to strengthen civil society in Cuba.</p>
+                                    <p class="accordion-toggle-text">•  A traveler is required to engage in Support for the Cuban People activities consistent with a full-time schedule. These types of activities include: Meeting with local businessmen, artists, tobacco manufacturers and people who own their own business; explore independent museums; independent markets; dance classes; meeting and engaging with musicians at a show; art shows; discuss Cuban society with locals.</p>
+                                    <p class="accordion-toggle-text">•  A traveler must avoid all transactions with a GAESA-owned (military-owned) business.</p>
 
-                                     <p class="accordion-toggle-text">All our programs fall under this category. These are some of the activities that are included and count toward Support for the Cuban People:</p><br/>
-                                    <p class="accordion-toggle-text">1.  Stay at casa particular (B&B homestay) when roundtrips are arranged by Havana True Colors.</p><br/>
-                                    <p class="accordion-toggle-text">2.  Support and engage with local business and independent entrepreneurs like artists, musicians, food vendors, restaurant owners, B&B homestay owners, etc. Whatever your interests, you can find a way to support the Cuban people.</p><br/>
-                                    <p class="accordion-toggle-text">3.  Eat at local restaurant or paladares.</p><br/>
-                                    <p class="accordion-toggle-text">4.  Avoid transactions at military-owned business.</p><br/>
-                                    <p class="accordion-toggle-text">To fit into this category, several programs have been designed and all engage in compliant activities over enough hours to fulfill a full-time schedule. We are open to customized your experience upon request while assisting to ensure that your stay is compliant with the new travel requirements.</p><br/>
-                                    <p class="accordion-toggle-text">This has been stated multiple times, both in the announcement and in the released documentation and Marco Rubio, who was leading this policy change, explicitly outlines how Americans can travel to Cuba under Support for the Cuban People category.</p><br/>
-                                    <p class="accordion-toggle-text">Before new regulations announced by the Trump Administration went into effect, many travelers were able to choose the People to People Educational category. Under the new Cuba travel regulations, a traveler can only choose the People to People category if they are traveling with a group package tour, meaning you can no longer travel independently under that category.</p><br/>
+                                     <p class="accordion-toggle-text">All our programs fall under this category. These are some of the activities that are included and count toward Support for the Cuban People:</p>
+                                    <p class="accordion-toggle-text">1.  Stay at casa particular (B&B homestay) when roundtrips are arranged by Havana True Colors.</p>
+                                    <p class="accordion-toggle-text">2.  Support and engage with local business and independent entrepreneurs like artists, musicians, food vendors, restaurant owners, B&B homestay owners, etc. Whatever your interests, you can find a way to support the Cuban people.</p>
+                                    <p class="accordion-toggle-text">3.  Eat at local restaurant or paladares.</p>
+                                    <p class="accordion-toggle-text">4.  Avoid transactions at military-owned business.</p>
+                                    <p class="accordion-toggle-text">To fit into this category, several programs have been designed and all engage in compliant activities over enough hours to fulfill a full-time schedule. We are open to customized your experience upon request while assisting to ensure that your stay is compliant with the new travel requirements.</p>
+                                    <p class="accordion-toggle-text">This has been stated multiple times, both in the announcement and in the released documentation and Marco Rubio, who was leading this policy change, explicitly outlines how Americans can travel to Cuba under Support for the Cuban People category.</p>
+                                    <p class="accordion-toggle-text">Before new regulations announced by the Trump Administration went into effect, many travelers were able to choose the People to People Educational category. Under the new Cuba travel regulations, a traveler can only choose the People to People category if they are traveling with a group package tour, meaning you can no longer travel independently under that category.</p>
 
                                 </div>
                             </div>
@@ -403,7 +409,7 @@ price start
                             </div>
                             <div id="collapseNeun" class="panel-collapse collapse">
                                 <div class="panel-body">
-                                    <p class="accordion-toggle-text">Our meeting point will be set at your accommodation (B&B or hotel), airport or cruise terminal. At the end of the service we will drive you back or drop you off wherever you decide. Any of our services can be reserved through our website: <a href="http://www.havanatruecolors.com">www.havanatruecolors.com</a> or directly to <p class="accordion-toggle-text"><a href="mailto:havanatruecolors@gmail.com">havanatruecolors@gmail.com</a>.</p><br/>
+                                    <p class="accordion-toggle-text">Our meeting point will be set at your accommodation (B&B or hotel), airport or cruise terminal. At the end of the service we will drive you back or drop you off wherever you decide. Any of our services can be reserved through our website: <a href="http://www.havanatruecolors.com">www.havanatruecolors.com</a> or directly to <a href="mailto:havanatruecolors@gmail.com">havanatruecolors@gmail.com</a>.</p>
                                     <p class="accordion-toggle-text">In our website you can find suggested pick up time for the different services. If you prefer differently, please, let us know as part of your request and we will be back to you with an answer.</p>
                                 </div>
                             </div>
