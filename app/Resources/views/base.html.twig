@@ -19,11 +19,11 @@
     <link rel="stylesheet" href="{{ asset('css/main.css') }}">
     <!-- Responsive Stylesheet -->
     <link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
-    <link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'> 
+    <!--<link href="https://fonts.googleapis.com/css?family=Bangers|Kaushan+Script" rel="stylesheet">--> 
     {% block stylesheets %}{% endblock %}
     <!-- Js -->
     <script src="{{ asset('js/vendor/modernizr-2.6.2.min.js') }}"></script>
-    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
     <script>window.jQuery || document.write('<script src="{{ asset('js/vendor/jquery-1.10.2.min.js') }}"><\/script>')</script>
     <script src="{{ asset('js/jquery.nav.js') }}"></script>
     <script src="{{ asset('js/jquery.sticky.js') }}"></script>
@@ -31,16 +31,15 @@
     <script src="{{ asset('js/plugins.js') }}"></script>
     <script src="{{ asset('js/wow.min.js') }}"></script>
     <script src="{{ asset('js/main.js') }}"></script>
+    <!--<script src='https://www.google.com/recaptcha/api.js'></script>-->
 
 </head>
 <body>
-{% block carousel %}
-{% endblock %}   
-    <!--
+ <!--
     Header start
     ============================== -->
     <nav id="navigation">
-        <div class="container">
+        <div class="">
             <div class="row">
                 <div class="col-md-12">
                     <div class="block">
@@ -65,7 +64,6 @@
                                         <li><a style="font-size: 20px!important" href="{{path('index')}}#blog">Services</a></li>
                                         <li><a style="font-size: 20px!important" href="{{path('index')}}#about-us">About us</a></li>
                                         <li><a style="font-size: 20px!important" href="{{path('index')}}#price">FAQ</a></li>
-                                        <!--<li><a href="#subscribe">news</a></li>-->
                                         <li><a style="font-size: 20px!important" href="{{path('index')}}#contact-us">contact us</a></li>
                                     </ul>
                                 </div><!-- /.navbar-collapse -->
@@ -76,6 +74,9 @@
             </div><!-- .row close -->
         </div><!-- .container close -->
     </nav><!-- header close -->    
+{% block carousel %}
+{% endblock %}   
+
 
    {% block intivation %}
     <!--
@@ -103,19 +104,19 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="block wow fadeInLeft" data-wow-delay="200ms">
-                        <h3 style="font-family: Righteous">CONTACT <span style="">INFO</span></h3>
+                        <h3 class="contactText">CONTACT <span style="">INFO</span></h3>
                         <div class="info">
                             <ul>
                                 <li>
-                                    <h4 style=""><i class="fa fa-phone"></i>Telefone</h4>
+                                    <h4 style=""><i class="fa fa-phone"></i> Telefone</h4>
                                     <p>(+53) 52440711 </p>
                                     <p>(+53) 52948403</p>
 
                                 </li>
                                <br/>
                                 <li >
-                                    <h4 style=""><i class="fa fa-envelope"></i>E mail</h4>
-                                    <p><a href="mailto:info@havanatruecolors.com">havanatruecolors@gmail.com</a>></p>
+                                    <h4 style=""><i class="fa fa-envelope"></i> E mail</h4>
+                                    <p><a href="mailto:info@havanatruecolors.com">info@havanatruecolors.com</a></p>
 
                                 </li>
                             </ul>
@@ -125,7 +126,7 @@
                 <!-- .col-md-4 close -->
                 <div class="col-md-4">
                     <div class="block wow fadeInLeft" data-wow-delay="700ms">
-                        <h3>LATEST <span style="">TRIPADVISOR POSTS</span></h3>
+                        <h3 class="contactText">LATEST <span style="">TRIPADVISOR POSTS</span></h3>
                         <div class="blog">
                             <ul>
                                 <!--<li>
@@ -143,25 +144,9 @@
                 <!-- .col-md-4 close -->
                 <div class="col-md-4">
                     <div class="block wow fadeInLeft" data-wow-delay="1100ms">
-                         <!--<div class="gallary">
-                            <h3>PHOTO <span>STREAM</span></h3>
-                            <ul>
-                                <li>
-                                    <a href="#"><img src="{{asset('images/photo/photo-1.jpg')}}" alt=""></a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="{{asset('images/photo/photo-2.jpg')}}" alt=""></a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="{{asset('images/photo/photo-3.jpg')}}" alt=""></a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="{{asset('images/photo/photo-4.jpg')}}" alt=""></a>
-                                </li>
-                            </ul>
-                        </div>-->
+                        
                         <div class="social-media-link">
-                            <h3>Follow <span style="">US</span></h3>
+                            <h3 class="contactText">Follow <span style="">US</span></h3>
                             <ul>
                                 <li>
                                     <a href="http://www.twiter.com/habanatruecolors">
@@ -169,7 +154,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="http://www.facebook.com/habanatruecolors">
+                                    <a href="https://www.facebook.com/havana.truecolors">
                                         <i style="color: black" class="fa fa-facebook"></i>
                                     </a>
                                 </li>
@@ -180,7 +165,7 @@
                                 </li>
                                 <li>
                                     <a href="http://www.tripadvisor.com/habanatruecolors">
-                                        <i style="color: black"  class="fa fa-youtube"></i>
+                                        <i style="color: black"  class="fa fa-tripadvisor"></i>
                                     </a>
                                 </li>
                             </ul>

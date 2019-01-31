@@ -1,8 +1,35 @@
 /* var text-decoration */
 @font-face {
   font-family: myfont;
-  src: url(../fonts/ufonts.com_tw-cen-mt.ttf);
+  src: url(../fonts/OpenSans-Regular.ttf);
 }
+@font-face {
+  font-family: myfontSubTitle;
+  src: url(../fonts/SouthernAire_Personal_Use_Only.ttf);
+}
+@font-face {
+  font-family: titlesFonts;
+  src: url(../fonts/Bangers-Regular.ttf);
+}
+
+@font-face {
+  font-family: subTitlesFonts;
+  src: url(../fonts/KaushanScript-Regular.ttf);
+}
+
+@font-face {
+  font-family: contactsFonts;
+  src: url(../fonts/Righteous-Regular.ttf);
+}
+
+@font-face {
+  font-family: homeTitles;
+  src: url(../fonts/PlazaDReg.ttf);
+}
+
+
+
+
 /*--
     Common Css
 --*/
@@ -261,7 +288,7 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
   right: 0;
   top: -40px;
   font-size: 40px;
-  color: #0869fe;
+  color: #fff;;
 }
 /*--
     about-us Start
@@ -425,8 +452,12 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
 
   background: #ff530a;
   color: #fff;
- 
-}
+ }
+
+ .offerText{
+  font-family: titlesFonts!important;
+ }
+
 .white_text {
   color: #fff;
 }
@@ -708,47 +739,47 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
 }
 #footer .block .blog ul,
 #footer .block .info ul,
-#footer .block .gallary ul {
+/*#footer .block .gallary ul {
   padding-top: 20px;
-}
+}*/
 #footer .block .blog ul li,
 #footer .block .info ul li,
-#footer .block .gallary ul li {
+/*#footer .block .gallary ul li {
   margin-bottom: 25px;
   display: inline-block;
   margin-right: 20px;
-}
+}*/
 #footer .block .blog ul li h4,
 #footer .block .info ul li h4,
-#footer .block .gallary ul li h4 {
+/*#footer .block .gallary ul li h4 {
   padding-bottom: 10px;
   display: block;
   color: #0869fe;
-}
+}*/
 #footer .block .blog ul li h4 i,
 #footer .block .info ul li h4 i,
-#footer .block .gallary ul li h4 i {
+/*#footer .block .gallary ul li h4 i {
   color: #555;
   margin-right: 30px;
   font-size: 20px;
-}
+}*/
 #footer .block .blog ul li h4 a,
 #footer .block .info ul li h4 a,
-#footer .block .gallary ul li h4 a {
+/*#footer .block .gallary ul li h4 a {
   color: #0869fe;
   font-size: 20px;
   font-weight: 600;
-}
+}*/
 #footer .block .blog ul li p,
 #footer .block .info ul li p,
-#footer .block .gallary ul li p {
+/*#footer .block .gallary ul li p {
   color: #474747;
   font-size: 14px;
-}
+}*/
 #footer .block .social-media-link h3 {
   font-size: 20px;
   padding-bottom: 15px;
-  padding-top: 30px;
+
 }
 #footer .block .social-media-link h3 span {
   color: #0869fe;
@@ -795,41 +826,59 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
 }
 
 .item-title{
-
   background-color: rgba(0, 0, 0, 0.5);
   padding-left:10px!important; 
   padding-right:10px!important;
-  font-size: 25px;
+}
+
+.contactText{
+  font-family: contactsFonts!important;
 }
 
 .transparence-captions{
-
   background-color: rgba(0, 0, 0, 0.5) !important;
   text-align: center; 
   font-size: 30px!important;
-  font-family: Cambria;
   color: #fbd301!important;
 }
 
-.accordion-toggle{
-  font-size: 16px!important;
-   font-family: Cambria;
+.subTitles{
+	font-family: myfontSubTitle;
 }
+
+.caption-subTitles{
+	font-family: subTitlesFonts, cursive!important;
+	text-align: center!important;
+}
+
+.seccionTitle{
+	font-family: titlesFonts, cursive;
+}
+
+.accordion-toggle{
+text-align: justify!important;
+font-family: myfont!important;
+font-size: 1.8rem!important;
+}
+
 .accordion-toggle-text{
-  font-size: 14px!important;
-  font-family: Cambria;
+text-align: justify!important;
+font-family: myfont!important;
+font-size: 1.6rem!important;
 }
 
 .tours-text{
-  font-size: 20px!important;
-  font-family: Cambria;
+ text-align: justify!important;
+font-family: myfont!important;
+font-size: 1.8rem!important;
 }
 
 .page-title{
+  padding-top: 20px!important;
   color: #0265fc!important;
-  font-size: 70px!important;
+  font-size: 60px!important;
   text-shadow: 2px 2px 2px #FFFFFF;
-
+  font-family: titlesFonts, cursive;
 }
 
 .transparence-title{
@@ -838,8 +887,6 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
   padding-right:10px!important; 
   color:white!important;
   margin-top: 50px!important;
-
-
 }
 
 .sdp{
@@ -853,7 +900,186 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
 }
 
 .white-text{
- 
   color: white!important;
 }
 
+#mdialWidth{
+  padding-top: 130px!important;
+  width: 70% !important;
+  max-width: 270px!important;
+  min-width: 270px!important;
+  position: relative !important; 
+}
+
+.carusel-captions-eins{
+	margin-bottom: 250px!important;
+	padding-left: 350px!important;
+}
+
+.carusel-captions-zwei{
+	padding-right: 400px!important;
+}
+
+
+.carusel-captions-vier{
+	margin-bottom: 300px!important;
+	padding-right: 400px!important;
+}
+
+.about-info{
+text-align: justify!important;
+font-family: myfont!important;
+font-size: 1.8rem!important;
+}
+
+.carusel-captions-sechs{
+	padding-left: 400px!important;
+}
+
+
+.item-title{
+text-align: justify!important;
+font-family: myfont!important;
+font-size: 1.8rem!important;
+
+}
+
+
+.services-info{
+text-align: justify!important;
+font-family: myfont!important;
+font-size: 1.9rem!important;
+text-align:justify!important;
+color: white!important;
+}
+
+a.fa.fa-angle-down{
+padding: 10px 15px;
+color: #fff;
+border: 2px solid #b4b4b4;
+border-radius: 50%;
+font-size: 24px;
+margin-top: 200px;
+transition: all 0.5s;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+
+h3{
+  text-align: left!important;
+}
+
+.content-right h3{
+  text-align: center!important;
+}
+
+.email{
+  font-size:500px!important;
+  color:blue!important;
+}
+.white_text{
+text-align: left!important;
+}
+
+.justify-text{
+text-align: justify!important;
+font-family: myfont!important;
+}
+
+#hero-area {
+  position: center;
+}
+
+#hero-area:before {
+  content: "";
+  position: center;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  width: 100%;
+  height: 480px!important;
+  background: url("../images/overlay-pattern.png") #000000;
+  opacity: 0.3;
+}
+
+.imagen-sm{
+	min-height: 480px!important;
+	min-width: 480px!important;
+}
+
+.carusel-captions-eins{
+ text-align: center!important;
+}
+
+.page-title{
+  padding-top: 20px!important;
+  color: #0265fc!important;
+  font-size: 35px!important;
+  text-shadow: 2px 2px 2px #FFFFFF;
+  font-family: titlesFonts, cursive;
+}
+
+.caption-subTitles{
+ text-align: center!important;
+
+}
+
+.description-tours{
+ text-align: justify!important;
+}
+
+p{
+  text-align: center!important;
+  font-size: 1.6rem!important;
+}
+.orange  {
+	text-align: center!important;
+}
+
+.item-title{
+text-align: left!important;
+font-family: myfont!important;
+font-size: 1.6rem!important;
+
+}
+
+.about-info{
+text-align: left!important;
+font-family: myfont!important;
+font-size: 1.6rem!important;
+}
+
+.accordion-toggle{
+text-align: left!important;
+font-family: myfont!important;
+font-size: 1.6rem!important;
+}
+
+.accordion-toggle-text{
+text-align: left!important;
+font-family: myfont!important;
+font-size: 1.5rem!important;
+line-height: 2.0rem!important;
+}
+
+.accordion-toggle-text a{
+	font-size: 1.5rem!important;
+}
+.invitation-info{
+	text-align: left!important;
+	font-size: 1.8rem!important;
+}
+.tours-text{
+ 
+text-align: left!important;
+font-family: myfont!important;
+font-size: 1.6rem!important;
+}
+
+.tours-text a{
+font-size: 1.6rem!important;
+}
+
+}
