@@ -43,7 +43,8 @@ class MailerController extends Controller
                 ),
                 'text/html'
             );
-            $this->get('mailer')->send($message);            
+            $this->get('mailer')->send($message); 
+            //mail('elvis@cteag.une.cu','Prueba de mail','Probando mail');        
             $em = $this->getDoctrine()->getManager();
             $em->persist($booking);            
             $em->flush();
