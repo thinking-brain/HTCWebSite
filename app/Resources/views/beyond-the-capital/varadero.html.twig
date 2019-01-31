@@ -204,6 +204,7 @@ CONTACT US  start
                     <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1000ms">
                         {{ form_widget(form.additionalRequest, {'attr': {'class': 'form-control','rows': '3','placeholder':'Additional Requests'}}) }}
                     </div>
+                    <div class="g-recaptcha" data-sitekey="6Ldq7I0UAAAAAMqzGIpRI5ZgmKiP_9usBvibEXPP" data-callback="enableBtn"></div>
                     <input type='submit' class="btn btn-default wow bounceIn btn-submit text-center" data-wow-duration="500ms" data-wow-delay="1300ms" value="Send Now" />
                     {{ form_end(form) }}
                 </div>
@@ -212,3 +213,13 @@ CONTACT US  start
     </div><!-- .container close -->
 </section><!-- #contact-us close -->
 {% endblock %}
+{% block scripts %}
+<script>
+    $(document).ready(function () {
+        $('.btn-submit').addClass('disabled');
+    });
+    function enableBtn(){
+        $('.btn-submit').removeClass('disabled');
+    }
+</script>
+    {% endblock %}
