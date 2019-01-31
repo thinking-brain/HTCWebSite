@@ -1,8 +1,35 @@
 /* var text-decoration */
 @font-face {
   font-family: myfont;
-  src: url(../fonts/ufonts.com_tw-cen-mt.ttf);
+  src: url(../fonts/MuktaMalar-Regular.ttf);
 }
+@font-face {
+  font-family: myfontSubTitle;
+  src: url(../fonts/SouthernAire_Personal_Use_Only.ttf);
+}
+@font-face {
+  font-family: titlesFonts;
+  src: url(../fonts/Bangers-Regular.ttf);
+}
+
+@font-face {
+  font-family: subTitlesFonts;
+  src: url(../fonts/KaushanScript-Regular.ttf);
+}
+
+@font-face {
+  font-family: contactsFonts;
+  src: url(../fonts/Righteous-Regular.ttf);
+}
+
+@font-face {
+  font-family: homeTitles;
+  src: url(../fonts/PlazaDReg.ttf);
+}
+
+
+
+
 /*--
     Common Css
 --*/
@@ -261,7 +288,7 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
   right: 0;
   top: -40px;
   font-size: 40px;
-  color: #0869fe;
+  color: #fff;;
 }
 /*--
     about-us Start
@@ -425,8 +452,12 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
 
   background: #ff530a;
   color: #fff;
- 
-}
+ }
+
+ .offerText{
+  font-family: titlesFonts!important;
+ }
+
 .white_text {
   color: #fff;
 }
@@ -708,47 +739,47 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
 }
 #footer .block .blog ul,
 #footer .block .info ul,
-#footer .block .gallary ul {
+/*#footer .block .gallary ul {
   padding-top: 20px;
-}
+}*/
 #footer .block .blog ul li,
 #footer .block .info ul li,
-#footer .block .gallary ul li {
+/*#footer .block .gallary ul li {
   margin-bottom: 25px;
   display: inline-block;
   margin-right: 20px;
-}
+}*/
 #footer .block .blog ul li h4,
 #footer .block .info ul li h4,
-#footer .block .gallary ul li h4 {
+/*#footer .block .gallary ul li h4 {
   padding-bottom: 10px;
   display: block;
   color: #0869fe;
-}
+}*/
 #footer .block .blog ul li h4 i,
 #footer .block .info ul li h4 i,
-#footer .block .gallary ul li h4 i {
+/*#footer .block .gallary ul li h4 i {
   color: #555;
   margin-right: 30px;
   font-size: 20px;
-}
+}*/
 #footer .block .blog ul li h4 a,
 #footer .block .info ul li h4 a,
-#footer .block .gallary ul li h4 a {
+/*#footer .block .gallary ul li h4 a {
   color: #0869fe;
   font-size: 20px;
   font-weight: 600;
-}
+}*/
 #footer .block .blog ul li p,
 #footer .block .info ul li p,
-#footer .block .gallary ul li p {
+/*#footer .block .gallary ul li p {
   color: #474747;
   font-size: 14px;
-}
+}*/
 #footer .block .social-media-link h3 {
   font-size: 20px;
   padding-bottom: 15px;
-  padding-top: 30px;
+
 }
 #footer .block .social-media-link h3 span {
   color: #0869fe;
@@ -802,34 +833,49 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
   font-size: 25px;
 }
 
+.contactText{
+  font-family: contactsFonts!important;
+}
 .transparence-captions{
 
   background-color: rgba(0, 0, 0, 0.5) !important;
   text-align: center; 
   font-size: 30px!important;
-  font-family: Cambria;
   color: #fbd301!important;
 }
+.subTitles{
+	font-family: myfontSubTitle;
+}
+
+.caption-subTitles{
+	font-family: subTitlesFonts, cursive;
+}
+
+.seccionTitle{
+	font-family: titlesFonts, cursive;
+}
+
 
 .accordion-toggle{
-  font-size: 16px!important;
-   font-family: Cambria;
+  font-size: 18px!important;
+   font-family: myfont;
 }
 .accordion-toggle-text{
-  font-size: 14px!important;
-  font-family: Cambria;
+  font-size: 18px!important;
+  font-family: myfont;
 }
 
 .tours-text{
   font-size: 20px!important;
-  font-family: Cambria;
+  font-family: myfont;
 }
 
 .page-title{
+  padding-top: 20px!important;
   color: #0265fc!important;
-  font-size: 70px!important;
+  font-size: 60px!important;
   text-shadow: 2px 2px 2px #FFFFFF;
-
+  font-family: titlesFonts, cursive;
 }
 
 .transparence-title{
@@ -839,8 +885,8 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
   color:white!important;
   margin-top: 50px!important;
 
-
 }
+
 
 .sdp{
   padding: 10px 0px!important;
@@ -853,7 +899,34 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
 }
 
 .white-text{
- 
   color: white!important;
 }
 
+#mdialWidth{
+  padding-top: 130px!important;
+  width: 70% !important;
+  max-width: 270px!important;
+  min-width: 270px!important;
+  position: relative !important; 
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+.item-title{
+text-align: center!important;
+}
+
+p{
+  text-align: center!important;
+}
+h3{
+  text-align: left!important;
+}
+.content-right h3{
+  text-align: center!important;
+}
+
+.email{
+  font-size:500px!important;
+  color:blue!important;
+}
