@@ -719,6 +719,7 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
   border: 0px;
   width: 100%;
   height: 50px;
+  margin-top: 10px;
  /*--padding-top: 15px;--*/
   -webkit-transition: .3s all;
   -o-transition: .3s all;
@@ -930,6 +931,7 @@ font-size: 1.8rem!important;
 text-align: justify!important;
 font-family: myfont!important;
 font-size: 1.8rem!important;
+padding-bottom: 0!important;
 }
 
 .carusel-captions-sechs{
@@ -948,9 +950,11 @@ font-size: 1.8rem!important;
 .services-info{
 text-align: justify!important;
 font-family: myfont!important;
-font-size: 1.9rem!important;
+font-size: 20px!important;
 text-align:justify!important;
 color: white!important;
+line-height: 150% !important;
+
 }
 
 a.fa.fa-angle-down{
@@ -1069,7 +1073,10 @@ line-height: 2.0rem!important;
 }
 .invitation-info{
 	text-align: left!important;
-	font-size: 1.8rem!important;
+  font-size: 1.8rem!important;
+  line-height: 150% !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 .tours-text{
  
