@@ -14,8 +14,8 @@ class BookingType extends AbstractType
         ->add('tour','choice',['choices' => [            
             'Havana True Stories' => 'Havana True Stories',
             'Havana All Times' => 'Havana All Times',
-            'My Blule Havana' => 'My Blule Havana',
-            'Oldman Havana' => 'Oldman Havana',
+            'My Blue Havana' => 'My Blue Havana',
+            'Old Man & Havana' => 'Old Man & Havana',
             'From Our Kitchen' => 'From Our Kitchen',
             'Cienfuegos-Trinidad' => 'Cienfuegos-Trinidad',
             'Varadero & more' => 'Varadero & more',
