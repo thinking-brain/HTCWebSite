@@ -837,7 +837,7 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
 }
 
 .transparence-captions{
-  background-color: rgba(0, 0, 0, 0.5) !important;
+  /*background-color: rgba(0, 0, 0, 0.5) !important;*/
   text-align: center; 
   font-size: 30px!important;
   color: #fbd301!important;
@@ -859,13 +859,22 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
 .accordion-toggle{
 text-align: justify!important;
 font-family: myfont!important;
-font-size: 1.8rem!important;
+font-size: 1.6rem!important;
 }
 
 .accordion-toggle-text{
 text-align: justify!important;
 font-family: myfont!important;
 font-size: 1.6rem!important;
+line-height: 2.0rem!important;
+}
+
+.accordion-toggle-text a{
+
+font-family: myfont!important;
+font-size: 1.6rem!important;
+line-height: 2.0rem!important;
+background: rgba(255, 255, 255, 0.89)!important;
 }
 
 .tours-text{
@@ -932,6 +941,7 @@ text-align: justify!important;
 font-family: myfont!important;
 font-size: 1.8rem!important;
 padding-bottom: 0!important;
+line-height: 2.0rem!important;
 }
 
 .carusel-captions-sechs{
@@ -966,6 +976,13 @@ font-size: 24px;
 margin-top: 200px;
 transition: all 0.5s;
 }
+
+#about-us .block p {
+    padding: 10px 0px 0px!important;
+    padding-bottom: 0px!important;
+}
+
+
 
 @media (min-width: 320px) and (max-width: 480px) {
   
@@ -1003,13 +1020,13 @@ font-family: myfont!important;
   bottom: 0;
   top: 0;
   width: 100%;
-  height: 480px!important;
+  height:410px!important;
   background: url("../images/overlay-pattern.png") #000000;
   opacity: 0.3;
 }
 
 .imagen-sm{
-	min-height: 480px!important;
+	min-height: 410px!important;
 	min-width: 480px!important;
 }
 
@@ -1018,7 +1035,7 @@ font-family: myfont!important;
 }
 
 .page-title{
-  padding-top: 20px!important;
+  padding-top: 100px!important;
   color: #0265fc!important;
   font-size: 35px!important;
   text-shadow: 2px 2px 2px #FFFFFF;
@@ -1053,24 +1070,33 @@ font-size: 1.6rem!important;
 text-align: left!important;
 font-family: myfont!important;
 font-size: 1.6rem!important;
+line-height: 2.0rem!important;
 }
 
 .accordion-toggle{
 text-align: left!important;
 font-family: myfont!important;
-font-size: 1.6rem!important;
+font-size: 1.8rem!important;
 }
 
 .accordion-toggle-text{
 text-align: left!important;
 font-family: myfont!important;
-font-size: 1.5rem!important;
+font-size: 1.6rem!important;
 line-height: 2.0rem!important;
 }
 
 .accordion-toggle-text a{
-	font-size: 1.5rem!important;
+ 
+font-family: myfont!important;
+font-size: 1.6rem!important;
+line-height: 2.0rem!important;
 }
+
+#price .block p {
+    padding: 5px 0px 0px!important;
+}
+
 .invitation-info{
 	text-align: left!important;
   font-size: 1.8rem!important;
@@ -1088,5 +1114,16 @@ font-size: 1.6rem!important;
 .tours-text a{
 font-size: 1.6rem!important;
 }
+
+#about-us .block p {
+    padding: 10px 0px 0px!important;
+    padding-bottom: 0px!important;
+}
+
+
+.carusel-captions-sechs{
+  margin-bottom: 50px!important;
+}
+
 
 }
