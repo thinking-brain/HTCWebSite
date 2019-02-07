@@ -35,15 +35,15 @@ class BeyondTheCapitalController extends Controller
     }
 
     /**
-     * @Route("/beyond-the-capital/viñales", name="viñales")
+     * @Route("/beyond-the-capital/vinales", name="vinales")
      */
-    public function viñales()
+    public function vinales()
     {
         // build the form ...
         $contact = new Booking();          
         $form = $this->createForm(new BookingType(), $contact);
         // end build the form
-        return $this->render('beyond-the-capital/viñales.html.twig',array( 'form' => $form->createView(),));
+        return $this->render('beyond-the-capital/vinales.html.twig',array( 'form' => $form->createView(),));
     }
 
     /**

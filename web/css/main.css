@@ -983,10 +983,17 @@ transition: all 0.5s;
 }
 
 
+.googleMaps{
+  width:640px!important; 
+  height:480px!important
+}
 
 @media (min-width: 320px) and (max-width: 480px) {
-  
 
+ .googleMaps{
+  width:280px!important; 
+  height:280px!important
+} 
 h3{
   text-align: left!important;
 }
